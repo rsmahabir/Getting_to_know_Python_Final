@@ -1,0 +1,1144 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Python Essentials in ArcGIS I - An Introduction | Esri Video</title>
+<meta name="title" content="Python Essentials in ArcGIS I - An Introduction" />
+<meta name="description" content="Knowledge of Python is vital for ArcGIS professionals interested in furthering their automation and analysis skills. Python allows users to create custom data&#8230;" />
+<meta name="keywords" content="2010 Esri International User Conference, 2010 UC Technical Sessions, David Wynne, Drew Flater, Python, Python Scripting, " />
+<meta name="viewport" content="width=1280, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="copyright" content="&#169; 2011 Esri" />
+<!--gsa tags-->
+<meta name="content-language" content="en" />
+<meta name="search-domain" content="video.esri.com" />
+<meta name="search-collection" content="marketing" />
+<meta name="search-category" content="video" />
+<!--end gsa tags-->
+<link type="text/plain" rel="author" href="http://video.esri.com/humans.txt" />
+<link rel="apple-touch-icon" href="/graphics/1/apple/apple-touch-icon.png" />
+<link rel="alternate" href="http://feeds.feedburner.com/EsriVideo-Allsmall" type="application/rss+xml" title="Latest Videos (Small)" />
+<link rel="alternate" href="http://feeds.feedburner.com/EsriVideo-Alllarge" type="application/rss+xml" title="Latest Videos (Large)" />
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+<link rel="canonical" href="http://video.esri.com/watch/74/python-essentials-in-arcgis-i-an-introduction" />
+<link href="http://video.esri.com/graphics/1/logo.png" rel="image_src"/>
+<script src="/cache/130906238797c1fcc52efc6cb74008ad3e6874083e.js"></script>
+<link type="text/css" rel="stylesheet" href="/cache/1308193278839849034020db2fe238c5c6ddcc10a0.css" media="screen" title="Esri Esque" />
+<meta http-equiv="last-modified" content="2010-08-25" />
+<!-- image link -->
+<link rel="image_src" href="http://video.esri.com/thumbs/2010/08/74/TW_706_s.jpg" />
+<!-- end image link -->
+<!-- gsa -->
+<meta name="thumbnail" content="http://video.esri.com/thumbs/2010/08/74/TW_706_t.jpg" />
+<!-- end gsa -->
+<!-- comments rss -->	
+<!-- end comments rss -->	
+<script>
+/*------------------------------------*/
+// VIDEO CONFIGURATION
+/*------------------------------------*/
+var autoScroll = "Y";
+var Mode = "N";
+var videoSource = "2010/08/TW_706_480.mp4";
+var videoPreview = "/thumbs/2010/08/74/TW_706_l.jpg";
+var largeFile = true;
+var volumeLevel = 1;
+var timedText = "http://video.esri.com/video/transcript_caption/74";
+function timeUpdateSeek(){updateFlashPlayhead(0);}
+</script>
+<script>
+/*------------------------------------*/
+// FLASH VARIABLES
+/*------------------------------------*/
+var videoWidth = "960";
+var videoHeight = "540";
+var videoPlayer = "/flash/obsidian.swf?v=2.0.3";
+var objectId = "ArcStream";
+var ResizeCounter = false;
+/*------------------------------------*/
+// VARS OBJECT
+/*------------------------------------*/
+var flashvars = {
+	streamer:'rtmp://vod.esri.com/cfx/st/',
+	videoURL: videoSource,
+	previewImage: videoPreview,
+	large:largeFile,
+	vol:volumeLevel,
+	Caption: timedText,
+	copyrightYear: 2011,
+	contactText: "There was a problem loading the video. Please email an Esri Video administrator for assistance",
+	contactEmail: "video_admin@esri.com",
+	autoplay: "false",
+	autoRewind: "false"
+};
+/*------------------------------------*/
+// PARAMETERS OBJECT
+/*------------------------------------*/
+var params = {
+	wmode: "opaque",
+	allowfullscreen: "true",
+	salign: "tl",
+	allowScriptAccess: "always"
+};
+/*------------------------------------*/
+// ATTRIBUTES OBJECT
+/*------------------------------------*/
+var attributes = {
+	id: objectId,
+	name: objectId
+};
+</script>
+<script>
+/*------------------------------------*/
+// SWF OBJECT INIT
+/*------------------------------------*/
+swfobject.embedSWF(
+	videoPlayer,
+	"VideoContent",
+	videoWidth,
+	videoHeight,
+	"9.0.28",
+	"/flash/expressInstall.swf?v=2.0.3",
+	flashvars,
+	params,
+	attributes
+);
+</script>
+<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-215788-4']);_gaq.push(['_setDomainName','.esri.com']);_gaq.push(['_trackPageview']);_gaq.push(['_trackPageLoadTime']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s)})();</script>
+</head>
+<body id="watch">
+<div id="BackgroundImage">
+	<div id="Container">
+		<div id="DropShadow">
+			<div id="Shadow"><!-- Shadow --></div>
+<div id="Header">
+	<nav>
+		<ul id="PersonalMenu">
+						<li class="NoSub firstList"><a  id="SiteMenuChannels" title="Video Channels" href="/channels">Channels</a></li>
+			<li class="NoSub"><a id="SiteMenuQueue" title="Playlist Queue" href="/my/queue">Queue<span id="PlayListCount">
+								</span></a></li>
+												<li id="LoginMenu"><a href="/login">Login/Register&nbsp;<span class="Arrow"><!-- Arrow --></span></a>
+				<ul>
+					<li><a href="/login">Login</a></li>
+										<li><a href="/register">Create an Account</a></li>
+					<li><a href="https://webaccounts.esri.com/cas/index.cfm?fa=login.forgotpwd.showform&amp;returnURL=http://video.esri.com/forgot-password/success&amp;failurl=http://video.esri.com//forgot-password/failure">Forgot your Password?</a></li>
+									</ul>
+			</li>
+								</ul>
+	</nav>
+		<header>
+		<h1><a href="/" title="Esri Video Home"><strong>Esri Video</strong></a></h1>
+	</header>
+	<nav>
+		<div id="EsriLogo"><a id="EsriLink" title="Esri Home" href="http://www.esri.com/"><!-- Esri Link --></a></div>
+		<div id="qSearch">
+			<form id="qSearchForm" action="/search/" method="post">
+				<sup class="Icon" title="Search" id="qSearchButton"></sup>
+				<input data-id-media="74" title="Search Videos" type="text" id="searchVal" name="searchVal" value="Search Videos" autocomplete="off" placeholder="Search Videos" />
+			</form>
+			<ul>
+				<li>
+					<div class="qSearchType">Topics/Content</div>
+					<div id="topics" class="searchResult"></div>
+					<div class="qSearchType">Products</div>
+					<div id="products" class="searchResult"></div>
+					<div class="qSearchType">People</div>
+					<div id="people" class="searchResult"></div>
+					<div class="qSearchType">Events</div>
+					<div id="events" class="searchResult"></div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	</div>
+			<div id="Main">
+				<div class="White">
+	<article>
+		<div id="Content">
+	<section>
+		<div id="VideoContainer">
+			<div id="VideoContent">
+				<div class="srt" data-video="HTML5Video" data-srt="http://video.esri.com/video/transcript_srt/74/en-us"></div>
+								<div class="noVideoPlayer">
+					<p><a target="_blank" title="Download Adobe Flash Player" href="http://www.adobe.com/go/getflashplayer"><img alt="Download Adobe Flash Player" src="/graphics/160x41_Get_Flash_Player.jpg" width="160" height="41" /></a></p>
+					<p><strong>You need <a href="http://www.adobe.com/go/getflashplayer" target="_blank">Adobe Flash Player</a> to watch this video.</strong></p>
+									</div>
+							</div>
+		</div>
+	</section>
+	<section>
+		<div id="Transcriptions" class="PaneBlue">
+			<h2>Transcript</h2>
+<div class="Pad" id="TranscriptAreaCon">
+	<div id="TranscriptionText" class="ScrollPanel">
+				<p id="T1"><strong>00:01</strong>Hello and welcome to User Conference 2010.</p>
+				<p id="T5"><strong>00:05</strong>I hope that it&#039;s been good...a good couple of hours for everybody and hope that you have some plans...</p>
+				<p id="T11"><strong>00:11</strong>...to get some good information out of User Conference this year.</p>
+				<p id="T16"><strong>00:16</strong>Today we&#039;re going to introduce Python and its role in ArcGIS.</p>
+				<p id="T20"><strong>00:20</strong>We&#039;ll show some basic Python concepts and examine what Python scripting can do to improve...</p>
+				<p id="T26"><strong>00:26</strong>...your geoprocessing workflows.</p>
+				<p id="T29"><strong>00:29</strong>Just kind of as a for your information, these presentation slides are going to be available on the User...</p>
+				<p id="T35"><strong>00:35</strong>...Conference Proceedings Web page and the DVD that gets sent out in a couple of weeks as well as...</p>
+				<p id="T41"><strong>00:41</strong>... on the geoprocessing resource center, so don&#039;t feel like you have to go crazy scribbling notes, trying to keep up.</p>
+				<p id="T48"><strong>00:48</strong>Just try to absorb what we&#039;re talking about, what we&#039;re saying, and you can get what were...get the actual slides later on.</p>
+				<p id="T56"><strong>00:56</strong>Also, we&#039;re going to try to take questions as we&#039;re going along, so if you feel brave enough to have others hear...</p>
+				<p id="T62"><strong>01:02</strong>...the questions that you have for us, please raise your hands and we&#039;ll try to spot you and get to an end point...</p>
+				<p id="T70"><strong>01:10</strong>...then take some questions.</p>
+				<p id="T72"><strong>01:12</strong>But we have a lot to cover so we&#039;ll have to work quickly with that.</p>
+				<p id="T76"><strong>01:16</strong>And of course we&#039;ll take some questions at the end, just personally if you&#039;d rather do it that way.</p>
+				<p id="T85"><strong>01:25</strong>So, we have an expected audience for this session and I just kind of want to use this as a little bit of a, an informal survey...</p>
+				<p id="T94"><strong>01:34</strong>...so our first point there is that you are new to Python scripting, or at kind of a beginner level...</p>
+				<p id="T99"><strong>01:39</strong>...so if you can just give me a wave if you&#039;re at about that level.</p>
+				<p id="T103"><strong>01:43</strong>Okay, that&#039;s a lot of people.</p>
+				<p id="T107"><strong>01:47</strong>And you&#039;re in the right spot. I don&#039;t want to make that sound bad.</p>
+				<p id="T110"><strong>01:50</strong>So I guess one prerequisite that we have is that you&#039;re comfortable in ArcGIS.</p>
+				<p id="T115"><strong>01:55</strong>So maybe you&#039;ve used geoprocessing before, maybe ModelBuilder, some of that type of functionality...</p>
+				<p id="T122"><strong>02:02</strong>...but you really want to start using Python.</p>
+				<p id="T124"><strong>02:04</strong>So maybe it&#039;s another wave out of those people familiar with ArcGIS geoprocessing.</p>
+				<p id="T130"><strong>02:10</strong>Okay, how about those that are moving to Python, maybe from a different scripting language?</p>
+				<p id="T134"><strong>02:14</strong>So you&#039;re familiar with some programming and just want to start learning Python. Okay, a good number.</p>
+				<p id="T140"><strong>02:20</strong>And maybe you&#039;re none of these three or you&#039;re all of them, and you&#039;re just interested in what&#039;s new in 10.</p>
+				<p id="T145"><strong>02:25</strong>And everybody should wave for that one. Two hands.</p>
+				<p id="T152"><strong>02:32</strong>So here&#039;s what we&#039;ll be covering today.</p>
+				<p id="T155"><strong>02:35</strong>We&#039;ll try to answer kind of the fundamental question of, Why should I use Python?</p>
+				<p id="T160"><strong>02:40</strong>We&#039;ll move to a short section on some general Python basics.</p>
+				<p id="T164"><strong>02:44</strong>We&#039;ll hope to kind of get everyone to a starting point so that you know some of the terminology and functions...</p>
+				<p id="T170"><strong>02:50</strong>...that we&#039;ll be talking about as we go through the presentation.</p>
+				<p id="T175"><strong>02:55</strong>We&#039;ll talk about what&#039;s new for Python scripting and ArcGIS 10, so for everybody who is waving with...</p>
+				<p id="T181"><strong>03:01</strong>...two hands, that will be a key part.</p>
+				<p id="T185"><strong>03:05</strong>Of course we&#039;ll cover executing geoprocessing tools in Python.</p>
+				<p id="T190"><strong>03:10</strong>That&#039;s really the main reason that you&#039;re going to be here at this session today is because you want...</p>
+				<p id="T194"><strong>03:14</strong>...to do geoprocessing in Python, so that&#039;s kind of our starting point.</p>
+				<p id="T199"><strong>03:19</strong>When we&#039;re talking about scripting in ArcGIS, we&#039;ll deal with messaging and error handling...</p>
+				<p id="T204"><strong>03:24</strong>...which are important when you&#039;re beginning with Python.</p>
+				<p id="T208"><strong>03:28</strong>We&#039;ll get into some geoprocessing tasks that you can handle with Python and cover some ArcPy...</p>
+				<p id="T213"><strong>03:33</strong>...functions that you can use to accomplish those tasks.</p>
+				<p id="T217"><strong>03:37</strong>We&#039;ll cover batch processing, which is, again, a very common use for Python, as well as receiving arguments...</p>
+				<p id="T223"><strong>03:43</strong>...to make your scripts very flexible and easy to share with, with your, with your users, the users of your scripts.</p>
+				<p id="T232"><strong>03:52</strong>So let&#039;s get started with some Python scripting basics.</p>
+				<p id="T238"><strong>03:58</strong>So the first question, I guess, and it might be on some peoples&#039; minds, some others might understand it, but...</p>
+				<p id="T244"><strong>04:04</strong>...what is Python?</p>
+				<p id="T245"><strong>04:05</strong>What is, you know, what is all the fuss that we&#039;re making about Python?</p>
+				<p id="T250"><strong>04:10</strong>In Python scripting, I guess from our stand of view, from the Esri stand of view, is the scripting language...</p>
+				<p id="T257"><strong>04:17</strong>...of choice for ArcGIS.</p>
+				<p id="T260"><strong>04:20</strong>And we like it for a number of reasons, but a couple of those reasons are because it&#039;s free for you to use...</p>
+				<p id="T266"><strong>04:26</strong>...there&#039;s no additional cost in using it, like with some scripting languages.</p>
+				<p id="T271"><strong>04:31</strong>It works on Windows and Linux platforms, so it&#039;s cross-platform. For those of you who may not use...</p>
+				<p id="T277"><strong>04:37</strong>...Windows, it will work on other platforms.</p>
+				<p id="T280"><strong>04:40</strong>And as well it&#039;s easy for beginners to use; it&#039;s a pretty straightforward language, once you get some basics down.</p>
+				<p id="T287"><strong>04:47</strong>So it&#039;s easy to learn, but it&#039;s also very powerful for our advanced users.</p>
+				<p id="T293"><strong>04:53</strong>But that question, I guess, still remains. Why should I use Python in ArcGIS?</p>
+				<p id="T298"><strong>04:58</strong>There&#039;s definitely some overhead to learning Python and how it works in ArcGIS...</p>
+				<p id="T304"><strong>05:04</strong>...so the question is, is it really worth the time?</p>
+				<p id="T308"><strong>05:08</strong>The short answer to that is yes.</p>
+				<p id="T310"><strong>05:10</strong>I might be a little bit slanted on that perspective, but it&#039;s overwhelming, yes.</p>
+				<p id="T316"><strong>05:16</strong>The long answer, I guess, we&#039;ll cover today and in other Python sessions this week.</p>
+				<p id="T322"><strong>05:22</strong>So, Python, just at its most basic point of reference, I guess, for ArcGIS is a way to run geoprocessing tools.</p>
+				<p id="T332"><strong>05:32</strong>You can run just a single tool or a string of tools, so like a geoprocessing workflow.</p>
+				<p id="T338"><strong>05:38</strong>But the strength of Python is not just in executing single tools, but rather in executing those long...</p>
+				<p id="T344"><strong>05:44</strong>...and advanced workflows that we know that you make.</p>
+				<p id="T348"><strong>05:48</strong>So, that ability to develop, execute, and share custom geoprocessing workflows that make Python scripting powerful is...</p>
+				<p id="T356"><strong>05:56</strong>...hopefully why you&#039;re here today and why you&#039;re interested in learning about Python.</p>
+				<p id="T361"><strong>06:01</strong>And, from a strictly cost-benefit perspective, using Python to automate some of your geoprocessing work...</p>
+				<p id="T367"><strong>06:07</strong>...can be an enormous time-saver.</p>
+				<p id="T369"><strong>06:09</strong>So, just I guess from a cost perspective it&#039;s going to help with that.</p>
+				<p id="T376"><strong>06:16</strong>So let&#039;s start with just some basic Python concepts.</p>
+				<p id="T380"><strong>06:20</strong>What is Python code?</p>
+				<p id="T381"><strong>06:21</strong>Python code is...can be thought of as simply text, text in a text file that can be viewed in any text editor or text viewer.</p>
+				<p id="T392"><strong>06:32</strong>But where you actually develop Python scripts and Python code is in an IDE, or...</p>
+				<p id="T398"><strong>06:38</strong>...an integrated development environment.</p>
+				<p id="T401"><strong>06:41</strong>So that&#039;s a program where you can write, save, run, debug Python code.</p>
+				<p id="T406"><strong>06:46</strong>Some examples of IDEs are Python Win IDL, as well as Wing, are some common IDEs.</p>
+				<p id="T416"><strong>06:56</strong>Starting with ArcGIS 10, you can also execute Python straight from inside an ArcGIS application in the Python window.</p>
+				<p id="T426"><strong>07:06</strong>So, we&#039;ll, we&#039;ll show that in some of our demonstrations and talk about it as well.</p>
+				<p id="T430"><strong>07:10</strong>So when we&#039;re looking at a Python file, how do we know what different kinds of lines there are?</p>
+				<p id="T435"><strong>07:15</strong>Essentially, how do I know which lines will execute, and which won&#039;t execute?</p>
+				<p id="T440"><strong>07:20</strong>So, there&#039;s the lines that will execute, and anything that won&#039;t execute is usually thought of as a comment.</p>
+				<p id="T447"><strong>07:27</strong>And a comment will always start with a pound sign. You can see it there on the example.</p>
+				<p id="T452"><strong>07:32</strong>So that pound sign indicates that it&#039;s a comment and that line will not execute.</p>
+				<p id="T456"><strong>07:36</strong>So comments are used kind of as placeholders or as a place where you can document the flow of your script...</p>
+				<p id="T462"><strong>07:42</strong>...and that line won&#039;t execute.</p>
+				<p id="T464"><strong>07:44</strong>Everything else will try to execute.</p>
+				<p id="T467"><strong>07:47</strong>Now, one of the very basic concepts in Python is a variable, and that&#039;s one of the building blocks...</p>
+				<p id="T473"><strong>07:53</strong>...that you&#039;ll use as you&#039;re writing scripts.</p>
+				<p id="T476"><strong>07:56</strong>So the question is, what are these variables?</p>
+				<p id="T478"><strong>07:58</strong>We&#039;ll use that word a lot today and so we need to start out with a good definition of that.</p>
+				<p id="T483"><strong>08:03</strong>Essentially a variable is just a name that stores a value.</p>
+				<p id="T488"><strong>08:08</strong>It&#039;s a sign using the equal sign, so you&#039;re just assigning some name equal to a raw value, and...</p>
+				<p id="T494"><strong>08:14</strong>...that value can be a string, sort of like a path to a dataset.</p>
+				<p id="T499"><strong>08:19</strong>It can be a simple number.</p>
+				<p id="T500"><strong>08:20</strong>Or it can be some other, more advanced Python data structures.</p>
+				<p id="T506"><strong>08:26</strong>And these variables will just act as substitutes for any raw values.</p>
+				<p id="T510"><strong>08:30</strong>You can use these variables...</p>
+				<p id="T511"><strong>08:31</strong>...many places in your scripts, including when you call geoprocessing tools, you can stick a variable in the...</p>
+				<p id="T517"><strong>08:37</strong>...geoprocessing tool, and it&#039;ll know what to do with that variable.</p>
+				<p id="T524"><strong>08:44</strong>So, an...a very important part of Python is the ability to test conditions, so you&#039;re using branching logic to perform...</p>
+				<p id="T532"><strong>08:52</strong>...one operation if a condition is met, and another operation if that condition is not met.</p>
+				<p id="T538"><strong>08:58</strong>The most common form of this is the &quot;if else&quot; statement, and that just reads something like, &quot;if this is true...</p>
+				<p id="T546"><strong>09:06</strong>...execute these indented lines, and if it&#039;s not true, we&#039;ll execute some other lines.&quot;</p>
+				<p id="T553"><strong>09:13</strong>So, a colon is put at the end of each condition statement and how the lines, like I said, are indented...</p>
+				<p id="T559"><strong>09:19</strong>...beneath that condition statement determines what will execute if the condition is met.</p>
+				<p id="T565"><strong>09:25</strong>So there&#039;s many different operators for testing conditions.</p>
+				<p id="T568"><strong>09:28</strong>Here we see mostly the double equal sign, and that&#039;s used to test equality, so that reads, Is equals to&quot;.</p>
+				<p id="T576"><strong>09:36</strong>There&#039;s some other operators, like some mathematical operators, greater than, less than, less than or equal to.</p>
+				<p id="T585"><strong>09:45</strong>There&#039;s many different operators you can use.</p>
+				<p id="T587"><strong>09:47</strong>So here in our code sample we see we&#039;re just assigning the letter A, a string of the letter A, to a variable.</p>
+				<p id="T593"><strong>09:53</strong>We&#039;ll then test that variable if the variable is equal to A.</p>
+				<p id="T597"><strong>09:57</strong>We&#039;ll execute what is ever in that indented section beneath it, and that &quot;if&quot; or that &quot;else&quot; statement in the fourth line, I guess...</p>
+				<p id="T607"><strong>10:07</strong>...down is simply saying if the variable is not equal to A.</p>
+				<p id="T611"><strong>10:11</strong>So that&#039;s the false part of the condition testing.</p>
+				<p id="T615"><strong>10:15</strong>And if it&#039;s not equal to A, will do whatever is indented, so print variable is not A.</p>
+				<p id="T622"><strong>10:22</strong>Another important thing that is built into the Python language is the ability to iterate or loop.</p>
+				<p id="T629"><strong>10:29</strong>And this keeps us from having to reproduce any code that we want to run more than once.</p>
+				<p id="T636"><strong>10:36</strong>And we put everything that we want to run or iterate beneath a loop statement and indent it.</p>
+				<p id="T643"><strong>10:43</strong>So there&#039;s a couple of different kinds of ways that you can accomplish looping or iteration.</p>
+				<p id="T648"><strong>10:48</strong>The first is a while loop and so you see just in this example we have x equal to 1, and while x is less than 5...</p>
+				<p id="T656"><strong>10:56</strong>...you just will go into that statement and do anything that is indented.</p>
+				<p id="T661"><strong>11:01</strong>So in this case we&#039;ll print x and then we&#039;ll increase the iteration, the x value, by 1 to continue the iteration...</p>
+				<p id="T669"><strong>11:09</strong>...and this will execute until x is greater than 5.</p>
+				<p id="T674"><strong>11:14</strong>Another kind of loop is a counted or range loop, so you can see in that middle example that we...</p>
+				<p id="T681"><strong>11:21</strong>...call a range statement, and we check for any values in the range starting with 1 and ending with 5...</p>
+				<p id="T688"><strong>11:28</strong>...and then we&#039;ll print the numbers that are inside that range.</p>
+				<p id="T693"><strong>11:33</strong>A third kind of loop or iterator is a list loop, and that&#039;s one that we&#039;ll hit quite a bit today, and that&#039;s just you start...</p>
+				<p id="T700"><strong>11:40</strong>...with a list and a list is one of those advanced Python data structures that I talked about earlier.</p>
+				<p id="T709"><strong>11:49</strong>So it can contain any numbers or data strings.</p>
+				<p id="T712"><strong>11:52</strong>In this case it contains numbers.</p>
+				<p id="T714"><strong>11:54</strong>And we&#039;ll just want to list, or we&#039;ll want to loop through or iterate through each item in that list...</p>
+				<p id="T720"><strong>12:00</strong>...and so for each number in x, our list, we will print the number.</p>
+				<p id="T729"><strong>12:09</strong>A few other important things that we want to keep in mind as we start working with Python code is that variable names...</p>
+				<p id="T736"><strong>12:16</strong>...functions, geoprocessing tools that are called in Python, everything pretty much is case sensitive.</p>
+				<p id="T745"><strong>12:25</strong>And if you start using different cases in your variables than what you originally set, you can run into this common...</p>
+				<p id="T752"><strong>12:32</strong>...&quot;name is not defined&quot; error, so that&#039;s one thing to look for.</p>
+				<p id="T757"><strong>12:37</strong>Another thing is when you&#039;re specifying a path in Python, you should just go ahead and use forward slashes...</p>
+				<p id="T763"><strong>12:43</strong>...as the path separators instead of the common backslash.</p>
+				<p id="T769"><strong>12:49</strong>There&#039;s additional characters you can use as these separators, but forward slashes work in both Windows and Linux...</p>
+				<p id="T775"><strong>12:55</strong>...so it&#039;s good to just stick, stick with that one.</p>
+				<p id="T779"><strong>12:59</strong>Now, two important pieces that you can think of in Python are functions and modules.</p>
+				<p id="T786"><strong>13:06</strong>And a function, you can kind of think of just as a tool.</p>
+				<p id="T790"><strong>13:10</strong>It&#039;s a defined piece of functionality that will perform some specific task, so again, you can just kind of think of it like a tool.</p>
+				<p id="T798"><strong>13:18</strong>A module is a Python file where functions live, and so often all of the functions in a module are related...</p>
+				<p id="T806"><strong>13:26</strong>...and these modules have to be imported into your Python scripts in order to be used.</p>
+				<p id="T811"><strong>13:31</strong>So the example that I have there on the third bullet is, we&#039;ll use the math module and call the square root function...</p>
+				<p id="T819"><strong>13:39</strong>...from that math module, and provide a value and that function will then return a result value.</p>
+				<p id="T830"><strong>13:50</strong>Okay, so now that we have some basic Python concepts in mind, let&#039;s start talking about Python scripting in ArcGIS.</p>
+				<p id="T839"><strong>13:59</strong>So, in ArcGIS 10, geoprocessing in Python is done through ArcPy.</p>
+				<p id="T844"><strong>14:04</strong>All geoprocessing tools are accessed, or can be accessed through ArcPy.</p>
+				<p id="T850"><strong>14:10</strong>So this ArcPy module is a package that only provides...that not only provides access to geoprocessing tools...</p>
+				<p id="T857"><strong>14:17</strong>...but also several special functions, classes, and modules that will enhance the scripting experience in ArcGIS.</p>
+				<p id="T865"><strong>14:25</strong>So there are certain functions, like the List feature classes function, that you can use to...</p>
+				<p id="T870"><strong>14:30</strong>...list all the feature classes in a workspace.</p>
+				<p id="T873"><strong>14:33</strong>The Describe function to retrieve data properties and the number of printer functions to get and modify...</p>
+				<p id="T879"><strong>14:39</strong>...a table or feature class&#039;s attribute values.</p>
+				<p id="T884"><strong>14:44</strong>There&#039;s a number of ArcPy classes that we can use to create complex data objects like spatial references...</p>
+				<p id="T891"><strong>14:51</strong>...field maps, and geometry objects.</p>
+				<p id="T893"><strong>14:53</strong>Classes are a topic that will be covered in the next session, actually, immediately after this session.</p>
+				<p id="T901"><strong>15:01</strong>And there are ArcPy modules that provide some extended functionality to be used with ArcGIS scripting.</p>
+				<p id="T909"><strong>15:09</strong>So, there&#039;s a mapping module for performing automated mapping tasks, and there&#039;s a Spatial Analyst module...</p>
+				<p id="T915"><strong>15:15</strong>...for performing raster analysis and map algebra.</p>
+				<p id="T919"><strong>15:19</strong>Now, ArcPy builds on the scripting experience of previous versions of ArcGIS that was known as ArcGIS scripting.</p>
+				<p id="T927"><strong>15:27</strong>You can still use the ArcGIS scripting module in ArcGIS 10 and almost everything that we talk about today is...</p>
+				<p id="T933"><strong>15:33</strong>... valid using ArcGIS scripting in previous ArcGIS releases.</p>
+				<p id="T938"><strong>15:38</strong>You&#039;ll just need to note that if you are on 9.3 or a previous release of the software before 10...</p>
+				<p id="T945"><strong>15:45</strong>...you&#039;ll need to refer to your documentation, because everything that we talk about today will be ArcGIS 10 specific.</p>
+				<p id="T952"><strong>15:52</strong>But, the concepts are very similar so don&#039;t be scared off by that.</p>
+				<p id="T958"><strong>15:58</strong>Also new at 10 is the Python window, which I mentioned earlier, and this is an embedded...</p>
+				<p id="T964"><strong>16:04</strong>...interactive Python interface actually built into ArcGIS.</p>
+				<p id="T967"><strong>16:07</strong>And this is a great place to explore ArcPy and start running geoprocessing tools using Python syntax.</p>
+				<p id="T974"><strong>16:14</strong>You can also access any Python functionality that you would be able to in a Python script file right here...</p>
+				<p id="T980"><strong>16:20</strong>...in the Python window in ArcGIS.</p>
+				<p id="T984"><strong>16:24</strong>So, in that window you can execute a single line or multiple lines of codes, code, as well as load any script files...</p>
+				<p id="T991"><strong>16:31</strong>...that you&#039;ve previously worked on, or save, save your work to a text file or a Python script.</p>
+				<p id="T999"><strong>16:39</strong>All right, so I&#039;ll start our first demonstration now.</p>
+				<p id="T1002"><strong>16:42</strong>This is my colleague David Wynne; he&#039;ll be doing the demonstrations. Dave.</p>
+				<p id="T1007"><strong>16:47</strong>Hey, thanks a lot. Is anyone here from Minnesota?</p>
+				<p id="T1011"><strong>16:51</strong>Yeah, do you recognize this?</p>
+				<p id="T1013"><strong>16:53</strong>This is Hennepin County in Minnesota; you can kind of see...Minneapolis and St. Paul down in the corner.</p>
+				<p id="T1020"><strong>17:00</strong>Can you people in the back hear me all right?</p>
+				<p id="T1023"><strong>17:03</strong>Yeah? Yeah.</p>
+				<p id="T1026"><strong>17:06</strong>No. No.</p>
+				<p id="T1031"><strong>17:11</strong>I&#039;m just going have to talk loud, I guess. Is that better?</p>
+				<p id="T1033"><strong>17:13</strong>[Unintelligible audience response]</p>
+				<p id="T1041"><strong>17:21</strong>All right. Well.</p>
+				<p id="T1050"><strong>17:30</strong>All right, well, I think I can do this one-handed, so we&#039;ll just try that and see what happens.</p>
+				<p id="T1054"><strong>17:34</strong>All right, so one of the things we added in ArcGIS 10 is the Python window.</p>
+				<p id="T1060"><strong>17:40</strong>So if you&#039;re here inside ArcMap...</p>
+				<p id="T1062"><strong>17:42</strong>...there&#039;s this little button up on the main toolbar, Python window.</p>
+				<p id="T1067"><strong>17:47</strong>And it&#039;s a regular window, you can move it around, you can dock it anywhere you want.</p>
+				<p id="T1074"><strong>17:54</strong>So it&#039;s divided into two sections, and the top section is where you put your code in, so any of you want to...</p>
+				<p id="T1079"><strong>17:59</strong>...run a geoprocessing tool ,you want to do any little bit of Python, you do it there.</p>
+				<p id="T1084"><strong>18:04</strong>In the bottom half, this is where Help shows up for tools, functions, other things, in addition...</p>
+				<p id="T1090"><strong>18:10</strong>...to messages that might return from your tools.</p>
+				<p id="T1094"><strong>18:14</strong>So, if I wanted to start running a tool I can just start by typing in &quot;ArcPy&quot;, and then when I hit that period...</p>
+				<p id="T1103"><strong>18:23</strong>...it gives me a list of options.</p>
+				<p id="T1107"><strong>18:27</strong>And as I go through that the list will narrow and I can pick a tool.</p>
+				<p id="T1112"><strong>18:32</strong>Now, one thing of note, when you&#039;re running tools, and Drew kind of alluded to this already...</p>
+				<p id="T1117"><strong>18:37</strong>...is that everything is case sensitive, right?</p>
+				<p id="T1120"><strong>18:40</strong>So you need to make sure that your tool name has correct upper case and correct lower case and as well the aliases...</p>
+				<p id="T1127"><strong>18:47</strong>...this management bit for copy features is also required.</p>
+				<p id="T1133"><strong>18:53</strong>So, kind of what the scenario is that I want to try and do here is, you&#039;ll note that Hennepin County in Minnesota...</p>
+				<p id="T1142"><strong>19:02</strong>...is bordered by several rivers.</p>
+				<p id="T1146"><strong>19:06</strong>And if I go in a little bit closer, you notice that the river doesn&#039;t really always follow the border of the county all that well.</p>
+				<p id="T1158"><strong>19:18</strong>I want to be able to take that river and move it to the county boundary, which is more accurate.</p>
+				<p id="T1167"><strong>19:27</strong>So I&#039;m going to do a series of tools to accomplish this.</p>
+				<p id="T1170"><strong>19:30</strong>I&#039;m going to use Copy Features tool, and then I&#039;m going to use a couple new editing tools that we have at 10.</p>
+				<p id="T1177"><strong>19:37</strong>So, write the bracket, I get intelligent drop-down based on choices that are available to me.</p>
+				<p id="T1183"><strong>19:43</strong>So, I&#039;m going to copy this Crow River feature class; now let&#039;s call it River Edits.</p>
+				<p id="T1194"><strong>19:54</strong>The reason I&#039;m doing this, the next two tools, which are both editing tools, modify the output.</p>
+				<p id="T1199"><strong>19:59</strong>So, you know, do I really know what I&#039;m doing? Maybe not.</p>
+				<p id="T1202"><strong>20:02</strong>So, I&#039;m going to make a copy with the Copy Features tool, and then I can work directly off of my copy instead of my original.</p>
+				<p id="T1211"><strong>20:11</strong>So, I just hit Enter, the tool will start running...okay. And you see over here [unintelligible] got a new output added to my map...</p>
+				<p id="T1223"><strong>20:23</strong>...and that&#039;s what I&#039;ll be working with.</p>
+				<p id="T1225"><strong>20:25</strong>So the next tool I&#039;m going to use is the Densify tool.</p>
+				<p id="T1230"><strong>20:30</strong>So again, take the tool like this, and I&#039;m going to pick the feature class I just created.</p>
+				<p id="T1241"><strong>20:41</strong>Now, densify second parameter is a keyword-based parameter.</p>
+				<p id="T1245"><strong>20:45</strong>So I get a drop-down based on the options that are available to me.</p>
+				<p id="T1248"><strong>20:48</strong>I&#039;m going to densify based on distance, and I&#039;m going to enter a string for the densify...</p>
+				<p id="T1255"><strong>20:55</strong>...distance I want to use, which is 25 meters.</p>
+				<p id="T1259"><strong>20:59</strong>As you&#039;ll note as I&#039;m going through these parameters, the help in the bottom threw a response...</p>
+				<p id="T1263"><strong>21:03</strong>...to where I am in my list of options.</p>
+				<p id="T1266"><strong>21:06</strong>So every time I hit a comma, basically, to move on to another parameter, you can see another parameter being highlighted.</p>
+				<p id="T1275"><strong>21:15</strong>And below there, of course, is all the tool information, more about the parameters, essentially a lot of the stuff...</p>
+				<p id="T1281"><strong>21:21</strong>...that you&#039;d see in the help system that&#039;s been brought directly into the ArcPy wrappers for these tools.</p>
+				<p id="T1291"><strong>21:31</strong>So, I&#039;ve done all the parameters I want here.</p>
+				<p id="T1293"><strong>21:33</strong>I&#039;m going to close that off and run that again.</p>
+				<p id="T1298"><strong>21:38</strong>And I&#039;m going to follow it up with the Snap tool.</p>
+				<p id="T1301"><strong>21:41</strong>The reason I&#039;m actually densifying that line is to create a more uniform pattern of vertices...</p>
+				<p id="T1309"><strong>21:49</strong>...something that...is closer to what I have in my county boundary.</p>
+				<p id="T1314"><strong>21:54</strong>So, again I&#039;m going to use the river edits as my input.</p>
+				<p id="T1319"><strong>21:59</strong>And before I do the next parameter I&#039;m just going to open up this tool so we can get a better look at what it actually does.</p>
+				<p id="T1328"><strong>22:08</strong>I&#039;m just going through the search, opening the Tool dialog.</p>
+				<p id="T1333"><strong>22:13</strong>So you know this tool has two parameters, and the first one is in input features...</p>
+				<p id="T1338"><strong>22:18</strong>...and the second one is this little more detailed parameter called Snap environment.</p>
+				<p id="T1341"><strong>22:21</strong>Now, sort of...see the snap environment is kind of like a table almost, it&#039;s a series of values that you can enter.</p>
+				<p id="T1350"><strong>22:30</strong>Or, when you have a parameter like that, or you have a parameter that&#039;s a multivalue where you can select multiple values...</p>
+				<p id="T1357"><strong>22:37</strong>...these can be represented in Python by Python lists.</p>
+				<p id="T1361"><strong>22:41</strong>So, that&#039;s represented with a square bracket.</p>
+				<p id="T1365"><strong>22:45</strong>And then, because this is a table there&#039;s multiple rows, so each row can again, can also be represented as a Python list.</p>
+				<p id="T1373"><strong>22:53</strong>Another square bracket.</p>
+				<p id="T1375"><strong>22:55</strong>So I want to snap to my Counties feature class, I&#039;m going to snap to the edge, and I&#039;m going to set a distance of 25 meters.</p>
+				<p id="T1394"><strong>23:14</strong>Square brackets to close out each list, a round bracket to close out the tool.</p>
+				<p id="T1401"><strong>23:21</strong>And this will take probably about eight to nine seconds.</p>
+				<p id="T1408"><strong>23:28</strong>Now you see, okay, that finished, but it isn&#039;t really what I was hoping for.</p>
+				<p id="T1412"><strong>23:32</strong>You can see certainly that, you know, sure it snapped in some places but obviously I missed the mark.</p>
+				<p id="T1419"><strong>23:39</strong>So, one of the nice things about Python Windows is it&#039;s very easy to recall what you&#039;ve done already...</p>
+				<p id="T1426"><strong>23:46</strong>...and reuse that functionality.</p>
+				<p id="T1429"><strong>23:49</strong>So if I just start clicking my arrow key I can go back up and start over again right from the beginning and I can run that...</p>
+				<p id="T1436"><strong>23:56</strong>...Copy Features tool again and re-create my temporary data, and I call Densify.</p>
+				<p id="T1444"><strong>24:04</strong>Then I&#039;m going to try, make that just a little bit tighter, and do that at 10 meters, hit Enter, and then snap.</p>
+				<p id="T1457"><strong>24:17</strong>I&rsquo;m going to be very generous and snap a total of 100 meters.</p>
+				<p id="T1465"><strong>24:25</strong>Do that a few seconds again.</p>
+				<p id="T1472"><strong>24:32</strong>All right, and now I think we&#039;ve actually got what we were looking for.</p>
+				<p id="T1475"><strong>24:35</strong>So this is my input I had beginnings. You can see how far off it is off the line.</p>
+				<p id="T1481"><strong>24:41</strong>And now, with a series of tools and sort of an iterative process, I&#039;m able to get the desired result that I&#039;m looking for.</p>
+				<p id="T1498"><strong>24:58</strong>Okay, thanks Dave.</p>
+				<p id="T1502"><strong>25:02</strong>So like we saw in that demonstration, executing a geoprocessing tool in Python is pretty straightforward.</p>
+				<p id="T1509"><strong>25:09</strong>Only one line of code is really needed to execute a tool, so first ArcPy must be imported...</p>
+				<p id="T1517"><strong>25:17</strong>...and then you&#039;ll just enter the tool syntax.</p>
+				<p id="T1521"><strong>25:21</strong>Now, the tool syntax is going to be an important thing, and it must always be followed with this convention...</p>
+				<p id="T1528"><strong>25:28</strong>...and it&#039;s ArcPy.toolname_toolboxalias.</p>
+				<p id="T1534"><strong>25:34</strong>And then the parameters are specified at the end there.</p>
+				<p id="T1538"><strong>25:38</strong>So, each geoprocessing tool has some input and output parameters that must be specified for the tool to execute.</p>
+				<p id="T1545"><strong>25:45</strong>So here in my example we see, I import ArcPy, I set an environment, and then I execute a geoprocessing tool...</p>
+				<p id="T1554"><strong>25:54</strong>...the Buffer Analysis tool.</p>
+				<p id="T1557"><strong>25:57</strong>Now as you&#039;re getting used to using Python to execute geoprocessing tools, there are some good places where...</p>
+				<p id="T1563"><strong>26:03</strong>...you can go to see tool syntax and make sure that you&#039;re actually using a tool correctly in Python.</p>
+				<p id="T1569"><strong>26:09</strong>One of those is the image that&#039;s on the screen there, and that&#039;s the Results window.</p>
+				<p id="T1574"><strong>26:14</strong>If you right-click on a tool in the Results window, you can copy that tool&#039;s syntax as a Python snippet...</p>
+				<p id="T1581"><strong>26:21</strong>...and so it will have all of the datasets actually right in line there, so when you copy it you can just...</p>
+				<p id="T1587"><strong>26:27</strong>...paste that into a script tool or into the Python window for reexecution.</p>
+				<p id="T1593"><strong>26:33</strong>There&#039;s also functionality in ModelBuilder to export a model to a Python script.</p>
+				<p id="T1598"><strong>26:38</strong>So if you have some established workflows that are already models, a starting place for you is to export your models to scripts.</p>
+				<p id="T1608"><strong>26:48</strong>You can also drag tools from the ArcToolBox window or the Search window that Dave showed right into the...</p>
+				<p id="T1614"><strong>26:54</strong>...Python window and it&#039;ll automatically drop in the correct tool syntax for you.</p>
+				<p id="T1621"><strong>27:01</strong>You can look at the tool documentation so each of the tools has a Help page that has both syntax information...</p>
+				<p id="T1627"><strong>27:07</strong>... that show us how the tool is used in Python, as well as a more exhaustive script example that uses that tool.</p>
+				<p id="T1637"><strong>27:17</strong>You can also call the arcpy.usage function to get help and syntax information about a tool.</p>
+				<p id="T1643"><strong>27:23</strong>So you see there, arcpy.usage and then I just specify the name of the tool that I want help for.</p>
+				<p id="T1652"><strong>27:32</strong>Now, while setting environments in ArcPy is also very straightforward, it has many rewards in making your work easier...</p>
+				<p id="T1659"><strong>27:39</strong>...and adding some additional control when you&#039;re running geoprocessing workflows.</p>
+				<p id="T1664"><strong>27:44</strong>For instance, there&#039;s the workspace environment, and if you&#039;re familiar with geoprocessing...</p>
+				<p id="T1669"><strong>27:49</strong>...environments, you know that all of the data that you have, if you set a workspace environment...</p>
+				<p id="T1676"><strong>27:56</strong>...you can reference that data by just its name instead of having to specify a full path.</p>
+				<p id="T1683"><strong>28:03</strong>And doing this in Python scripting is very helpful since it makes your script cleaner and easier to manage.</p>
+				<p id="T1689"><strong>28:09</strong>You don&#039;t have all these long paths in your script.</p>
+				<p id="T1692"><strong>28:12</strong>You can just specify the workspace once and then just use the names of your data instead of the full path.</p>
+				<p id="T1699"><strong>28:19</strong>There&#039;s also other environments, like output coordinate system and extent, that can be used in different ways...</p>
+				<p id="T1706"><strong>28:26</strong>...and you can look those up if you&#039;re interested.</p>
+				<p id="T1711"><strong>28:31</strong>Now, when geoprocessing tools are run, messages are always raised about tool execution...</p>
+				<p id="T1718"><strong>28:38</strong>...so when you&#039;re running just some geoprocessing tools from a tool dialog in ArcMap or ArcCatalog...</p>
+				<p id="T1724"><strong>28:44</strong>...messages are displayed in that Geoprocessing Messages window where they can be followed to see how...</p>
+				<p id="T1730"><strong>28:50</strong>...the tool is executing and there&#039;s a little progress bar in that.</p>
+				<p id="T1734"><strong>28:54</strong>Messages can also be seen in the Results window, and there&#039;s three different types of messages that tools will return.</p>
+				<p id="T1743"><strong>29:03</strong>That&#039;s informative messages, so that&#039;s just things like...that tell you when the tool execution started...</p>
+				<p id="T1749"><strong>29:09</strong>...how long execution took, and if the process succeeded.</p>
+				<p id="T1753"><strong>29:13</strong>There&#039;s warning messages. That&#039;s kind of a step up from informative messages, and these warning messages...</p>
+				<p id="T1758"><strong>29:18</strong>...make you aware of any potential problems that might have occurred during tool execution.</p>
+				<p id="T1764"><strong>29:24</strong>And there&#039;s, then of course, error messages, that indicate that there was a severe problem and that the tool actually failed.</p>
+				<p id="T1773"><strong>29:33</strong>So if the tool&#039;s executed in the ArcGIS Python window, and you may have...seen this in Dave&#039;s demonstration...</p>
+				<p id="T1780"><strong>29:40</strong>...when you execute the tool, there&#039;s that special window pane that displays any messages that you have right there in the...</p>
+				<p id="T1787"><strong>29:47</strong>...Python window; it was on the bottom part, so you can see any messages that occurred there.</p>
+				<p id="T1792"><strong>29:52</strong>Messages can also be read and displayed in Python, but you always need to explicitly call them...</p>
+				<p id="T1798"><strong>29:58</strong>...using the ArcPy Get Messages function.</p>
+				<p id="T1802"><strong>30:02</strong>So, you can specify whether you want to return all messages, just the informative messages, warning messages...</p>
+				<p id="T1808"><strong>30:08</strong>...or error messages, using the syntax that I have there in the slide.</p>
+				<p id="T1815"><strong>30:15</strong>So here&#039;s an example of using Get Messages to call geoprocessing tool messages.</p>
+				<p id="T1820"><strong>30:20</strong>So we&#039;ll want to execute a geoprocessing tool, in this case, the Buffer tool.</p>
+				<p id="T1826"><strong>30:26</strong>And then immediately after we execute the tool, we&#039;ll want to print the execution messages.</p>
+				<p id="T1832"><strong>30:32</strong>So that&#039;s as easy as saying &quot;Print arcpy.getmessages.&quot;</p>
+				<p id="T1836"><strong>30:36</strong>And this will return all of the messages that may have occurred since we didn&#039;t specify a number...</p>
+				<p id="T1841"><strong>30:41</strong>...there in the Get Messages call.</p>
+				<p id="T1845"><strong>30:45</strong>So, as you start working with Python, you&#039;re going to definitely run into some errors, and this can be pretty frustrating.</p>
+				<p id="T1852"><strong>30:52</strong>I had a starting point as a Python scripting users, and it was frustrating to me, so I&#039;m sure it will be...</p>
+				<p id="T1859"><strong>30:59</strong>...frustrating to any new users.</p>
+				<p id="T1863"><strong>31:03</strong>Errors can occur because a geoprocessing tool isn&#039;t being used right.</p>
+				<p id="T1867"><strong>31:07</strong>There might be typos in your script, or the script has some Python syntax errors.</p>
+				<p id="T1874"><strong>31:14</strong>Now, printing geoprocessing messages is a simple way to find errors that occurred when the tool...</p>
+				<p id="T1879"><strong>31:19</strong>...was being executed in Python.</p>
+				<p id="T1882"><strong>31:22</strong>But Python error handling provides a more intelligent method for dealing when errors when they do occur.</p>
+				<p id="T1889"><strong>31:29</strong>One of the most common and useful forms of error handling in Python is the Try-Except statement.</p>
+				<p id="T1895"><strong>31:35</strong>So you can think of it this way. You will try to do something, like execute a geoprocessing tool...</p>
+				<p id="T1901"><strong>31:41</strong>...or perform some computation, and if that fails, which you can think of as an acception, you can do some other steps.</p>
+				<p id="T1911"><strong>31:51</strong>And just one thing to make clear is if the operation in the Try statement does not fail, so if it executes correctly...</p>
+				<p id="T1919"><strong>31:59</strong>...all of the code that&#039;s in that Except statement is just skipped over.</p>
+				<p id="T1923"><strong>32:03</strong>That, that Except statement is only for if something wrong happened with the code that was executed in the Try statement.</p>
+				<p id="T1930"><strong>32:10</strong>So Try-Except statements are really pretty easy to incorporate into your scripts.</p>
+				<p id="T1934"><strong>32:14</strong>You just, you know, can copy in a Try and Except and indent your code correctly, so they&#039;re easy to incorporate...</p>
+				<p id="T1942"><strong>32:22</strong>...and you should really always use them in your scripts, since you might get into the case where you don&#039;t even...</p>
+				<p id="T1949"><strong>32:29</strong>...know why the tool isn&#039;t...why the tool is failing, or why some Python error is being raised, and you...</p>
+				<p id="T1957"><strong>32:37</strong>...might not even know about it unless you use some kind of error-handling technique like a Try-Except statement.</p>
+				<p id="T1964"><strong>32:44</strong>So here&#039;s just another short example showing...using the Try-Except statement.</p>
+				<p id="T1971"><strong>32:51</strong>So we will try to run the Buffer tool, but if an error occurs during tool execution because of perhaps a typo or some bad syntax...</p>
+				<p id="T1979"><strong>32:59</strong>...or I&rsquo;m using the tool incorrectly, the script will move then into the Except statement instead of simply failing and...</p>
+				<p id="T1986"><strong>33:06</strong>...ending the script execution, so you&#039;ll get some information.</p>
+				<p id="T1989"><strong>33:09</strong>And, in this case, in my Except statement, I print the statement that Buffer failed, so an obvious message there...</p>
+				<p id="T1995"><strong>33:15</strong>...and then also why the...why the Buffer tool failed, by getting any of the error messages using ArcPy Get Messages.</p>
+				<p id="T2004"><strong>33:24</strong>All right, I&#039;ll pass it back over to Dave for a demonstration of error handling and messaging.</p>
+				<p id="T2013"><strong>33:33</strong>All right, now, in the last demo, we worked on creating a little workflow inside of ArcMap.</p>
+				<p id="T2020"><strong>33:40</strong>But you know at some point you want to, you might want to be able to take, you know, work that you completed and flushed out...</p>
+				<p id="T2026"><strong>33:46</strong>...and got to work, and then take it kind of to another level.</p>
+				<p id="T2032"><strong>33:52</strong>So you can always click inside the Python window and you can Save As, and you can save it out to the Python file.</p>
+				<p id="T2043"><strong>34:03</strong>And this is that file; it&#039;s basically just everything that I did in that last session.</p>
+				<p id="T2048"><strong>34:08</strong>Now, I don&#039;t know how you think this is going to work just as is.</p>
+				<p id="T2052"><strong>34:12</strong>Well, no, of course not, there&#039;s always something.</p>
+				<p id="T2056"><strong>34:16</strong>So, when you&#039;re working inside ArcMap and you work inside the Python window...</p>
+				<p id="T2060"><strong>34:20</strong>...ArcPy is just there, it&#039;s imported for you.</p>
+				<p id="T2064"><strong>34:24</strong>Import any kind of functionality in...in Python...an import statement, import ArcPy.</p>
+				<p id="T2073"><strong>34:33</strong>Now, of course I went through a couple of different renditions so I&#039;m going to delete that out too.</p>
+				<p id="T2081"><strong>34:41</strong>And, if I just try and run this, I can go up here and click on this little triangle button, it&#039;s called Go...</p>
+				<p id="T2088"><strong>34:48</strong>...and that&#039;ll just execute script.</p>
+				<p id="T2097"><strong>34:57</strong>And give me a second and...</p>
+				<p id="T2106"><strong>35:06</strong>All right, well, hey, something didn&#039;t work. Of course.</p>
+				<p id="T2111"><strong>35:11</strong>Well, as Drew was sort of explaining there, there&#039;s some pretty simple mechanisms in Python to deal with...</p>
+				<p id="T2116"><strong>35:16</strong>...handle errors so I&#039;m going to start making this script a little more detailed by adding a try.</p>
+				<p id="T2124"><strong>35:24</strong>I can indent my code, and I type my except, and then I&#039;m going to print out my messages.</p>
+				<p id="T2136"><strong>35:36</strong>Now, of course, when it comes to messages, you really only care when it fails.</p>
+				<p id="T2141"><strong>35:41</strong>It works, you know, hey, good, but if it fails that&#039;s what you&#039;re interested in, right?</p>
+				<p id="T2146"><strong>35:46</strong>So that&#039;s what the 2 is, print me any error messages.</p>
+				<p id="T2150"><strong>35:50</strong>One thing I sort of forget sometimes to do but you could also type in on a Try-Except, you can add an else.</p>
+				<p id="T2156"><strong>35:56</strong>So, you know, the way try-except works, it&#039;s going to try anything in that block; and if that doesn&#039;t work it&#039;s...</p>
+				<p id="T2163"><strong>36:03</strong>...going to print anything, or do anything inside the except.</p>
+				<p id="T2167"><strong>36:07</strong>Well, if everything in the try works, then it will go down to the else, and I can say hey...some kind...</p>
+				<p id="T2177"><strong>36:17</strong>...of message that, hey, this didn&#039;t work.</p>
+				<p id="T2183"><strong>36:23</strong>Now, when you start writing code, you know there&#039;s going to be several lines, and you go to run it...</p>
+				<p id="T2190"><strong>36:30</strong>...and just nothing happens, you know.</p>
+				<p id="T2194"><strong>36:34</strong>Well, hey, down in the bottom there&#039;s this little tiny message, and it says &quot;Fail to run script syntax error.&quot;</p>
+				<p id="T2201"><strong>36:41</strong>Well, you can also sort of confirm whether or not you have any syntax errors just by clicking on this little check button.</p>
+				<p id="T2208"><strong>36:48</strong>If I click that, you notice the cursor jumped down to the Except line and simply all I did was forget that colon.</p>
+				<p id="T2217"><strong>36:57</strong>So now that&#039;s all fixed up. Let&#039;s run this again.</p>
+				<p id="T2221"><strong>37:01</strong>Okay, now I actually got proper error message, so what happened here?</p>
+				<p id="T2230"><strong>37:10</strong>Okay, it just doesn&#039;t recognize that one of my datasets exists at all. And well, okay, why is that?</p>
+				<p id="T2236"><strong>37:16</strong>Well, I&#039;m working inside [Arc]Map, I was working mostly with the layers.</p>
+				<p id="T2240"><strong>37:20</strong>Here I am in Python when it has no concept of where ArcMap is and what was in there.</p>
+				<p id="T2245"><strong>37:25</strong>So I need to able to reference those layers in some other way.</p>
+				<p id="T2251"><strong>37:31</strong>And one way I can do that is by setting geoprocessing environments.</p>
+				<p id="T2256"><strong>37:36</strong>So if you need to set an environment, it&#039;s arcpy.env, it&#039;s this environment class...</p>
+				<p id="T2261"><strong>37:41</strong>...and it contains all of the environments.</p>
+				<p id="T2264"><strong>37:44</strong>So, I&#039;m going to set my workspace to...</p>
+				<p id="T2283"><strong>38:03</strong>And, for good measure, you know, once in a while, you...you&#039;re going to run a script once, you run it again...</p>
+				<p id="T2288"><strong>38:08</strong>...hey, it didn&#039;t run the second time, and that is because you&#039;re trying to overwrite something that you did the first time.</p>
+				<p id="T2294"><strong>38:14</strong>So in Python, you want to overwrite datasets and feature classes. You set this Overwrite output option to True.</p>
+				<p id="T2304"><strong>38:24</strong>So now if I run this, and this time I&#039;m going to click on this Run button and that&#039;s going to allow me to step through...</p>
+				<p id="T2309"><strong>38:29</strong>...on a line-by-line basis.</p>
+				<p id="T2312"><strong>38:32</strong>So I hit that, this little dialog pops up.</p>
+				<p id="T2315"><strong>38:35</strong>I want to supply any arguments I can. I don&#039;t.</p>
+				<p id="T2319"><strong>38:39</strong>I want to step through the debugger, though. Just click that option and hit OK.</p>
+				<p id="T2325"><strong>38:45</strong>And by hitting either this button up here, Step Over button, or just hitting F10, I can step through on a line-by-line basis.</p>
+				<p id="T2342"><strong>39:02</strong>Well, somewhere I made another mistake, and I can&#039;t find it.</p>
+				<p id="T2348"><strong>39:08</strong>You see it?</p>
+				<p id="T2357"><strong>39:17</strong>Well, in any case. What should happen, and this is maybe another example of the error...oh, yes, Drew caught it.</p>
+				<p id="T2369"><strong>39:29</strong>I have a very long, complicated folder structure.</p>
+				<p id="T2373"><strong>39:33</strong>Sometimes keeping it simple, right,  makes it easier.</p>
+				<p id="T2376"><strong>39:36</strong>Okay, so let&#039;s go back there again.</p>
+				<p id="T2379"><strong>39:39</strong>Click on my Run button. I&#039;m going to step through in the debugger.</p>
+				<p id="T2384"><strong>39:44</strong>F10, set my workspace and my overwrite output options, run copy features.</p>
+				<p id="T2393"><strong>39:53</strong>Run Densify and run Snap, which if you remember took about eight seconds.</p>
+				<p id="T2404"><strong>40:04</strong>And when, hey, that all worked, it drops down inside the else, prints out that last message down in the bottom...</p>
+				<p id="T2411"><strong>40:11</strong>...hit F10 one more time, and I&#039;m done.</p>
+				<p id="T2416"><strong>40:16</strong>Three lines! Well, I think I&#039;m pushing my luck so I&#039;m going to turn it back to Drew.</p>
+				<p id="T2429"><strong>40:29</strong>Thank you, Dave, and you need to work on that folder structure.</p>
+				<p id="T2437"><strong>40:37</strong>All right, so at this part of the session we&#039;re going to start talking about some actual hands-on, kind of real-world...</p>
+				<p id="T2445"><strong>40:45</strong>...geoprocessing tasks that you might want to kind of get started working on, in Python.</p>
+				<p id="T2454"><strong>40:54</strong>So in the ArcGIS help, there&#039;s a topic that&#039;s pretty much just a flat list of all of the functions that are available through ArcPy.</p>
+				<p id="T2464"><strong>41:04</strong>So, I am going to launch to the Web help for ArcGIS, and this is the topic that I was saying, the alphabetical list...</p>
+				<p id="T2478"><strong>41:18</strong>...of ArcPy functions, and I just want to kind of introduce some of the ArcGIS 10 help structure...</p>
+				<p id="T2486"><strong>41:26</strong>...before we get to moving on that.</p>
+				<p id="T2488"><strong>41:28</strong>So, everything geoprocessing will now be in this professional library, and so that&#039;s kind of the first folder that...</p>
+				<p id="T2495"><strong>41:35</strong>...you&#039;ll want to get into.</p>
+				<p id="T2497"><strong>41:37</strong>Then under Professional Library, we have a geoprocessing book.</p>
+				<p id="T2501"><strong>41:41</strong>Under this geoprocessing book, there&#039;s several sections; one of them is All About ArcPy...</p>
+				<p id="T2510"><strong>41:50</strong>There&#039;s also this Geoprocessing with Python book that contains some additional information for...</p>
+				<p id="T2516"><strong>41:56</strong>...working with scripting, working with geoprocessing in Python.</p>
+				<p id="T2521"><strong>42:01</strong>So under this ArcPy site package book we have another section that&#039;s just about all the functions.</p>
+				<p id="T2528"><strong>42:08</strong>Now this is some of the other things that I was talking about that Python, or that ArcPy is composed of...</p>
+				<p id="T2534"><strong>42:14</strong>...these functions classes, modules, the bottom three are modules, but we want to just get started with some functions.</p>
+				<p id="T2543"><strong>42:23</strong>So here&#039;s the topic and you can reference that if you&#039;re ever curious about some of the functionality...</p>
+				<p id="T2547"><strong>42:27</strong>...that&#039;s available through ArcPy.</p>
+				<p id="T2554"><strong>42:34</strong>So, ArcPy functions.</p>
+				<p id="T2557"><strong>42:37</strong>These are very useful in Python scripts, and they were actually designed to support and...</p>
+				<p id="T2562"><strong>42:42</strong>...enhance the geoprocessing workflows that you want to do in Python.</p>
+				<p id="T2568"><strong>42:48</strong>So we&#039;ve already seen how the Get Messages function is used to call geoprocessing messages within a script.</p>
+				<p id="T2576"><strong>42:56</strong>There&#039;s another group of functions that is a very powerful group, and this can be used in many geoprocessing...</p>
+				<p id="T2584"><strong>43:04</strong>...workflows related to batch processing, and so these are the Listing Data functions, and they&#039;re just used to do things...</p>
+				<p id="T2594"><strong>43:14</strong>...like make a list of all feature classes in a workspace, or all rasters in a folder, or all fields in a table or a feature class.</p>
+				<p id="T2604"><strong>43:24</strong>There&#039;s also another function, the Describe function, that allows us to get the properties of almost any kind of data...</p>
+				<p id="T2611"><strong>43:31</strong>...so we&#039;ll talk about that today as well.</p>
+				<p id="T2615"><strong>43:35</strong>Now, if you think about it, there&#039;s a manual way in ArcGIS to do each of these tasks, whether that&#039;s getting...</p>
+				<p id="T2621"><strong>43:41</strong>...the properties of some data; you can right-click on a feature class in ArcCatalog and get, you know, any properties...</p>
+				<p id="T2628"><strong>43:48</strong>...that you can think of.</p>
+				<p id="T2630"><strong>43:50</strong>You can do batch processing by right-clicking on a geoprocessing tool in ArcToolBox window and...</p>
+				<p id="T2635"><strong>43:55</strong>...selecting the batch mode, or by using some ModelBuilder.</p>
+				<p id="T2640"><strong>44:00</strong>However, these ArcPy functions that we&#039;ll talk about provide a way to automate all of these tasks...</p>
+				<p id="T2648"><strong>44:08</strong>...that would traditionally have to be done manually.</p>
+				<p id="T2650"><strong>44:10</strong>And that&#039;s really the value of Python scripting is that...ability to automate, automate your work and make it easier.</p>
+				<p id="T2660"><strong>44:20</strong>So, one of the most common scripting tasks is batch processing, and you can think of that as just running...</p>
+				<p id="T2666"><strong>44:26</strong>...a geoprocessing operation, whether that&#039;s a single tool or a workflow, running it multiple times.</p>
+				<p id="T2673"><strong>44:33</strong>So, a simple example of this is clipping every feature class in a workspace to some common study area boundary.</p>
+				<p id="T2680"><strong>44:40</strong>Now, instead of running the Clip Tool from the tool dialog, you know, 5 times or 10 times, once for each...</p>
+				<p id="T2686"><strong>44:46</strong>...feature class, you can write a Python script with just a very few lines that performs this batch operation.</p>
+				<p id="T2695"><strong>44:55</strong>So batch processing tasks often use the ArcPy list methods that I showed in the previous slide to create a list of data...</p>
+				<p id="T2703"><strong>45:03</strong>...and then perform some operation on all of the data that&#039;s in that list.</p>
+				<p id="T2707"><strong>45:07</strong>And there are several of these list functions, like List Feature Classes, list Rasters, List Fields, and several others.</p>
+				<p id="T2717"><strong>45:17</strong>So here&#039;s a short code sample showing how the List Feature Classes method is used to create a list...</p>
+				<p id="T2722"><strong>45:22</strong>...of all feature classes in a feature dataset.</p>
+				<p id="T2725"><strong>45:25</strong>So we just need to need to set a workspace environment.</p>
+				<p id="T2728"><strong>45:28</strong>Many of the List functions will require that a workspace be set.</p>
+				<p id="T2734"><strong>45:34</strong>So we specify a workspace, and then we&#039;ll create a new variable, FC List, which will be equal to the list of all...</p>
+				<p id="T2741"><strong>45:41</strong>... polygon feature classes in that feature dataset.</p>
+				<p id="T2745"><strong>45:45</strong>And you see that List Feature Classes has parameters, the star in the polygon word, and that first parameter...</p>
+				<p id="T2751"><strong>45:51</strong>...that&#039;s the star, is just used to filter the feature classes that will be included in the list by their names.</p>
+				<p id="T2758"><strong>45:58</strong>And so with that star there, that&#039;s just a wildcard character that, no matter what the name of the feature class...</p>
+				<p id="T2763"><strong>46:03</strong>...it will be returned in the list.</p>
+				<p id="T2765"><strong>46:05</strong>You can do something like s, and then the star, and anything that starts with the letter s would be returned in the list.</p>
+				<p id="T2771"><strong>46:11</strong>Only those that start with the letter s, actually.</p>
+				<p id="T2775"><strong>46:15</strong>In that second parameter, you&#039;re able to specify a shape type that you want to use as a filter.</p>
+				<p id="T2782"><strong>46:22</strong>So if we put &quot;polygon&quot; there, only the polygon feature classes will be returned in the list.</p>
+				<p id="T2788"><strong>46:28</strong>We&#039;ll then use a list loop there in the bottom of the sample, so for &quot;FC&quot; in FC List, FC List is that list that we created...</p>
+				<p id="T2799"><strong>46:39</strong>...and we&#039;ll just want to print the name of that FC.</p>
+				<p id="T2802"><strong>46:42</strong>And so if we would do this, it would return these three feature classes that are highlighted...</p>
+				<p id="T2806"><strong>46:46</strong>...and those are polygon feature classes in that feature dataset.</p>
+				<p id="T2814"><strong>46:54</strong>So, another one, and I&#039;ll try to get through this slide quickly so we can see another demonstration.</p>
+				<p id="T2820"><strong>47:00</strong>But, in this one, we&#039;ll use the List Fields function to create a list of all of the fields that are in a table...</p>
+				<p id="T2827"><strong>47:07</strong>...or in this case a feature class, a shapefile feature class.</p>
+				<p id="T2831"><strong>47:11</strong>So we&#039;ll loop through each of the fields, so four fields in Fields, Fields is the list.</p>
+				<p id="T2837"><strong>47:17</strong>We want to print the field name and the field type, and the objects that are returned in list fields are...</p>
+				<p id="T2843"><strong>47:23</strong>...a little bit different than in our previous list example, List Feature Classes.</p>
+				<p id="T2849"><strong>47:29</strong>List Fields actually returns a group of field objects, and these field objects have a number of different properties...</p>
+				<p id="T2856"><strong>47:36</strong>...like name, type, alias name, that you can use to get the specific information about that field.</p>
+				<p id="T2865"><strong>47:45</strong>All right, I&#039;ll turn it over to Dave for a demonstration of batch processing.</p>
+				<p id="T2871"><strong>47:51</strong>All right, well, a few weeks ago I was perusing the ArcGIS Online and I found this dataset had 7...800...</p>
+				<p id="T2878"><strong>47:58</strong>...900 feature classes, a range of trees in North America, and personally this is very exciting, you know...</p>
+				<p id="T2888"><strong>48:08</strong>I&#039;m all about trees when I&#039;m not about GIS.</p>
+				<p id="T2891"><strong>48:11</strong>So, anyway, I copied this down and I&#039;m sort of concerned to work through that ever since.</p>
+				<p id="T2897"><strong>48:17</strong>One of the things I thought I could do here was sort of take that big mass of feature classes and do something...</p>
+				<p id="T2904"><strong>48:24</strong>...more productive with them.</p>
+				<p id="T2908"><strong>48:28</strong>So, really all I&#039;m going to do with, in the first part, is just sort of walk through that geodatabase and list out a series...</p>
+				<p id="T2918"><strong>48:38</strong>...of features classes in that, and then I&#039;m going to see what I can do with them.</p>
+				<p id="T2922"><strong>48:42</strong>So, I&#039;m just going to step through this code on a line-by-line basis.</p>
+				<p id="T2929"><strong>48:49</strong>I&#039;m going to import ArcPy. I&#039;m going to import something called OS.</p>
+				<p id="T2933"><strong>48:53</strong>This is a module, sort of Python, sort of gives you access to operating system-level tools.</p>
+				<p id="T2939"><strong>48:59</strong>It&#039;s very good for working with paths, and, well, paths in particular.</p>
+				<p id="T2945"><strong>49:05</strong>Now, this is a little trick I like to use.</p>
+				<p id="T2947"><strong>49:07</strong>You saw in the last demo how he totally blew getting the path right.</p>
+				<p id="T2950"><strong>49:10</strong>Well, this little thing here will always give you the location where your Python script sits.</p>
+				<p id="T2960"><strong>49:20</strong>So, if I just type that in down here...so, you know, you see how I can use that...</p>
+				<p id="T2964"><strong>49:24</strong>...that I always know where my location is, I can build that into other stuff, and I don&#039;t have to physically type it in and usually mess it up.</p>
+				<p id="T2975"><strong>49:35</strong>So I&#039;m going to use this because in my folder I have my Python script, and then I also have a series...</p>
+				<p id="T2980"><strong>49:40</strong>...of geodatabases, so I can use them relatively.</p>
+				<p id="T2984"><strong>49:44</strong>I&#039;m going to set my overwrite output option to True.</p>
+				<p id="T2988"><strong>49:48</strong>And then I&#039;m going to set my workspace, and my workspace I&#039;m going to set to a combination of my home directory...</p>
+				<p id="T2998"><strong>49:58</strong>...and this geodatabase I found on ArcGIS Online.</p>
+				<p id="T3005"><strong>50:05</strong>And the reason I&#039;m doing that is most of the List functions sort of need to be educated.</p>
+				<p id="T3009"><strong>50:09</strong>Well, you know, what do you want me to list feature classes on?</p>
+				<p id="T3013"><strong>50:13</strong>I&#039;m basically telling it, educate, use this feature...this workspace.</p>
+				<p id="T3020"><strong>50:20</strong>So of course I said there was a lot of feature [unintelligible] that, so I&#039;m going to put in a key word, this &ldquo;Ilex&rdquo; a wild card...</p>
+				<p id="T3026"><strong>50:26</strong>...and that&#039;s going to return lists of all the feature classes that are basically holly tree species.</p>
+				<p id="T3036"><strong>50:36</strong>Capture that list. The list is a lot of different things you can do with it, and one of it is simply the length of it.</p>
+				<p id="T3045"><strong>50:45</strong>So this message prints that out; there are 13 feature classes returned from the feature classes.</p>
+				<p id="T3050"><strong>50:50</strong>And then a list, of course, allows...lends itself very nicely to iterative type processes, so I can walk through that list...</p>
+				<p id="T3057"><strong>50:57</strong>...and a photo loop, one at a time; you know, just start printing those off.</p>
+				<p id="T3065"><strong>51:05</strong>Now, of course, you know, just walking through something and printing it really, you know, isn&#039;t that exciting.</p>
+				<p id="T3070"><strong>51:10</strong>So...and this other code down here that I wrote, we&#039;ll do something a little bit more.</p>
+				<p id="T3078"><strong>51:18</strong>Now the one thing Drew kind of spent a little time talking about lists, but if you want to just look at a list, you can just type...</p>
+				<p id="T3085"><strong>51:25</strong>...it in here, like right here at the bottom, and it will reveal its contents.</p>
+				<p id="T3090"><strong>51:30</strong>You want to sort that, you know, or you want to append something to it.</p>
+				<p id="T3096"><strong>51:36</strong>Lists allow certain sort of indexing and slicing, so if I want to get a specific value from a list, I can just put in a number...</p>
+				<p id="T3103"><strong>51:43</strong>...that&#039;ll give me the first one. If I want to get a range out, put in a number, colon, and then another number...</p>
+				<p id="T3110"><strong>51:50</strong>...and that&#039;ll give you a series of feature classes out of that list.</p>
+				<p id="T3115"><strong>51:55</strong>In any case, I&#039;m going to go up here and I&#039;m going to put a break point on this line here, and I&#039;m just going to click this Run button...</p>
+				<p id="T3128"><strong>52:08</strong>...and that&#039;ll run through everything I&#039;ve already done again a second time and come down here.</p>
+				<p id="T3134"><strong>52:14</strong>Now, usually when you run geoprocessing tools, and here I&#039;m creating Create File Geodatabase...</p>
+				<p id="T3140"><strong>52:20</strong>...you don&#039;t really care about what is, like, the results object.</p>
+				<p id="T3143"><strong>52:23</strong>Every tool, when it runs, returns a results object.</p>
+				<p id="T3146"><strong>52:26</strong>When I was running through that workflow before, copy features, snap and densify, it didn&#039;t matter that much.</p>
+				<p id="T3153"><strong>52:33</strong>But I&#039;m going to use...I&#039;m going to capture that, and then this result has a number of properties and methods...</p>
+				<p id="T3162"><strong>52:42</strong>...and one of the things it has is this Get output.</p>
+				<p id="T3166"><strong>52:46</strong>And this is, for this case, just a shortcut for me so that I can get the full path of this new geodatabase.</p>
+				<p id="T3177"><strong>52:57</strong>And the next few lines I&#039;m going to run to make Feature Layer tool, because I have a feature class of the states...</p>
+				<p id="T3183"><strong>53:03</strong>...of the U.S., but I don&#039;t want to clip my tree database off of the entire United States, I want to base it off of a specific state.</p>
+				<p id="T3193"><strong>53:13</strong>So I&#039;m writing this query, and I&#039;m going to pick out from my layer just the state of South Carolina.</p>
+				<p id="T3201"><strong>53:21</strong>Now you notice to this point, most of the time when I have had lines, it&#039;s all been based on one line.</p>
+				<p id="T3207"><strong>53:27</strong>The way I&#039;ve kind of spread it out here is just sort of a nicer way in Python of making it a little bit more readable.</p>
+				<p id="T3214"><strong>53:34</strong>Certainly this treats it as it&#039;s the same line. You can imagine if I tried to actually put this on one line.</p>
+				<p id="T3220"><strong>53:40</strong>You know, it&#039;s very difficult to explain to anyone what&#039;s actually happening.</p>
+				<p id="T3228"><strong>53:48</strong>So if I continue to step through...create my layer, then I&#039;m going to walk through that list...</p>
+				<p id="T3238"><strong>53:58</strong>...supply each item in that list individually to the Clip tool.</p>
+				<p id="T3245"><strong>54:05</strong>I&#039;m going to clip it with that layer I just created.</p>
+				<p id="T3249"><strong>54:09</strong>And then I&#039;m creating a path on the fly with the feature class name, and that&#039;ll be my output.</p>
+				<p id="T3260"><strong>54:20</strong>Hit F10.</p>
+				<p id="T3261"><strong>54:21</strong>Now when Drew was talking about Get Messages earlier, that reveals all your messages to you.</p>
+				<p id="T3266"><strong>54:26</strong>I just want something that kind of gives me a little bit of indication that things are moving along so I&#039;m...</p>
+				<p id="T3271"><strong>54:31</strong>...using a slightly different method called Get Messages, and that basically takes all the messages...</p>
+				<p id="T3276"><strong>54:36</strong>...and just gets a specific one.</p>
+				<p id="T3278"><strong>54:38</strong>So, I&#039;m going to print out the first one.</p>
+				<p id="T3282"><strong>54:42</strong>You see the first tool succeeded.</p>
+				<p id="T3288"><strong>54:48</strong>Second, and if I just hit F5, that will continue to run through that list and clip each of them in time...</p>
+				<p id="T3295"><strong>54:55</strong>...until the list has been exhausted.</p>
+				<p id="T3307"><strong>55:07</strong>See the messages will continue to pump into the bottom half.</p>
+				<p id="T3317"><strong>55:17</strong>And to prove this is actually working...if I go up to ArcMap...</p>
+				<p id="T3329"><strong>55:29</strong>...now it&#039;s done.</p>
+				<p id="T3337"><strong>55:37</strong>So I can turn these on or off as I want.</p>
+				<p id="T3343"><strong>55:43</strong>Oops. Try that again.</p>
+				<p id="T3352"><strong>55:52</strong>And I step through, then you can see that each of these layers has been clipped to the boundaries of South Carolina.</p>
+				<p id="T3367"><strong>56:07</strong>Okay, thanks, Dave.</p>
+				<p id="T3371"><strong>56:11</strong>All right. Another function that you&#039;ll get a lot of usage out of, and that&#039;s very good to include and often necessary...</p>
+				<p id="T3379"><strong>56:19</strong>...in your scripts, is the Describe function, and that&#039;s used to get the properties of really any kind of data.</p>
+				<p id="T3387"><strong>56:27</strong>So, when data is described using the Describe function, an object is returned that has a number of dynamic properties...</p>
+				<p id="T3394"><strong>56:34</strong>...that are determined by the type of data that was actually described.</p>
+				<p id="T3399"><strong>56:39</strong>So among these properties can be things like data type, shape type, the spatial reference of a feature class...</p>
+				<p id="T3406"><strong>56:46</strong>...the extent of the features, or simple things like the path to that dataset.</p>
+				<p id="T3414"><strong>56:54</strong>So, again, I will launch the help system, and so again we&#039;re under this functions book in the ArcPy site package...</p>
+				<p id="T3426"><strong>57:06</strong>...and this is just a description of what the Describe function is and how it can be used.</p>
+				<p id="T3433"><strong>57:13</strong>Here is a list of all of the different data types that can be described, so there&#039;s things like feature classes, tables...</p>
+				<p id="T3440"><strong>57:20</strong>...any other kind of data really that you can think of to use in ArcGIS.</p>
+				<p id="T3444"><strong>57:24</strong>And, at the most basic, when you describe a piece of data, you&#039;ll get the Describe Object properties...</p>
+				<p id="T3451"><strong>57:31</strong>...and so these will be those basic things, like the path to the dataset, the name of the dataset...</p>
+				<p id="T3458"><strong>57:38</strong>...any children the dataset might have, the data type, and the extension of the data.</p>
+				<p id="T3464"><strong>57:44</strong>So, those aren&#039;t very interesting.</p>
+				<p id="T3466"><strong>57:46</strong>They can be useful, but those properties are a little bit dry.</p>
+				<p id="T3472"><strong>57:52</strong>So if we would...wanted to describe something else, like a feature class, we can just go to the feature class...</p>
+				<p id="T3477"><strong>57:57</strong>...properties here, and here&#039;s a listing of all of the properties that you get when you describe a feature class.</p>
+				<p id="T3483"><strong>58:03</strong>So you get feature type, information about the m and z values, spatial index, the field that&#039;s the shape, the geometry field...</p>
+				<p id="T3494"><strong>58:14</strong>...as well as the shape type, so whether the feature class is polygon, line, point, what type of geometry.</p>
+				<p id="T3501"><strong>58:21</strong>And up here in the summary section, we also see that when you describe a feature class, you have access...</p>
+				<p id="T3506"><strong>58:26</strong>...to the table properties and dataset properties.</p>
+				<p id="T3509"><strong>58:29</strong>So if we look at that we can see that when you describe a feature class, you also get these table properties...</p>
+				<p id="T3519"><strong>58:39</strong>... as well as some dataset properties.</p>
+				<p id="T3530"><strong>58:50</strong>So here&#039;s an example of actually using the Describe function in a script.</p>
+				<p id="T3536"><strong>58:56</strong>We&#039;ll start by creating a new variable, Desk, that will equal the Describe object of the feature class specified.</p>
+				<p id="T3543"><strong>59:03</strong>We&#039;ll then use some of the conditional logic that we introduced earlier to print some different statements based on...</p>
+				<p id="T3549"><strong>59:09</strong>...what the input&#039;s shape type property is found to be.</p>
+				<p id="T3553"><strong>59:13</strong>So, depending on what the Describe object, Desk, shape type property is found to be, will print an appropriate message...</p>
+				<p id="T3560"><strong>59:20</strong>...stating the feature class shape type.</p>
+				<p id="T3563"><strong>59:23</strong>So after we create that Describe object, we&#039;ll look at it, that shape type attribute, and say if the shape type is equal...</p>
+				<p id="T3570"><strong>59:30</strong>...to a polyline, we&#039;ll just do something simple like print, &quot;The FC is a line feature class.&quot;</p>
+				<p id="T3577"><strong>59:37</strong>Else-if, the describe object&#039;s shape type property, is polygon, will print the FC as a polygon feature class.</p>
+				<p id="T3585"><strong>59:45</strong>Else neither of the above conditions are true, so we&#039;ll print, &quot;The feature class is not a line or polygon.&quot;</p>
+				<p id="T3595"><strong>59:55</strong>Now, as you start to create scripts, something that you may want to do is to make your script...</p>
+				<p id="T3599"><strong>59:59</strong>...capable of receiving arguments.</p>
+				<p id="T3602"><strong>1:00:02</strong>And when I say arguments, this thing that I&#039;m talking about, you can just think of as an input, an input to a script.</p>
+				<p id="T3610"><strong>1:00:10</strong>In all of our previous examples, we were using hard-coded input values, so hard-coded paths...</p>
+				<p id="T3616"><strong>1:00:16</strong>...or hard-coded numbers that we wanted to use.</p>
+				<p id="T3619"><strong>1:00:19</strong>If we wanted to reuse that code that we&#039;ve already written but specify some different inputs or change some...</p>
+				<p id="T3625"><strong>1:00:25</strong>...other settings, we would have to go in and actually manually edit to change the paths or those values.</p>
+				<p id="T3633"><strong>1:00:33</strong>And that&#039;s kind of where arguments come in, in making a script more flexible and easy to share with others...</p>
+				<p id="T3639"><strong>1:00:39</strong>...because they allow for values to be entered by the user and path to the tools and functions in the script...</p>
+				<p id="T3645"><strong>1:00:45</strong>...instead of actually hard coded right in the script.</p>
+				<p id="T3649"><strong>1:00:49</strong>Now in your ArcGIS scripts, you can use the Get Parameter as Text function to read arguments into your script.</p>
+				<p id="T3658"><strong>1:00:58</strong>Arguments that are read using Get Parameter as Text has a zero-based index, so that&#039;s just saying that the first argument...</p>
+				<p id="T3665"><strong>1:01:05</strong>...has an index of 0, the second argument has an index of 1, and we&#039;ll see that on the next slide.</p>
+				<p id="T3671"><strong>1:01:11</strong>Now, an important reason to use arguments is because it allows you to connect a Python script to an ArcGIS script tool...</p>
+				<p id="T3679"><strong>1:01:19</strong>...so you&#039;ll be able to specify any inputs and outputs for your script actually in ArcGIS in a script tool dialog...</p>
+				<p id="T3687"><strong>1:01:27</strong>...then pass those values to the Python script for execution.</p>
+				<p id="T3692"><strong>1:01:32</strong>So another short example showing how to receive arguments.</p>
+				<p id="T3697"><strong>1:01:37</strong>We see that I just create two new variables, Input FC and Output FC equal to...</p>
+				<p id="T3702"><strong>1:01:42</strong>...arcpy.getparameterastext, and we see the first one has an index of 0 and the second has an index of 1.</p>
+				<p id="T3710"><strong>1:01:50</strong>Now we can use these variables that are coming from script arguments in a geoprocessing tool...</p>
+				<p id="T3715"><strong>1:01:55</strong>...the same way we would if they were a variable set to a hard-coded string or value.</p>
+				<p id="T3720"><strong>1:02:00</strong>So, we have ArcPy Clip, the Clip tool, and we use one of the argument variables Input FC, as the input feature class.</p>
+				<p id="T3728"><strong>1:02:08</strong>We then use a hard-coded value for the clip features, and then back to another argument for the output feature class.</p>
+				<p id="T3735"><strong>1:02:15</strong>So there&#039;s no rules about being able to only use arguments and no more hard-coded values.</p>
+				<p id="T3741"><strong>1:02:21</strong>You can use either/or in your scripts and in the functions and tools inside of them.</p>
+				<p id="T3749"><strong>1:02:29</strong>All right, let&#039;s go back for another demonstration of using Describe and implementing arguments in your scripts.</p>
+				<p id="T3756"><strong>1:02:36</strong>Yeah, all right, so I&#039;m going to go back to the script I had in the second demo, and we&#039;re going to try...</p>
+				<p id="T3761"><strong>1:02:41</strong>...and make it more generic.</p>
+				<p id="T3763"><strong>1:02:43</strong>So, in each of this, each of the demos I&#039;ve had so far, I&#039;ve mostly been working with scripts that are...</p>
+				<p id="T3769"><strong>1:02:49</strong>...almost kind of like a macro, right?</p>
+				<p id="T3771"><strong>1:02:51</strong>There&#039;s the paths have been hard coded, there&#039;s been lots of assumptions that I&#039;ve probably been making I&#039;m not even aware of.</p>
+				<p id="T3778"><strong>1:02:58</strong>So, I&#039;m going to take some of those...that script and sort of evolve it to a point where it&#039;s something that could be adaptable...</p>
+				<p id="T3784"><strong>1:03:04</strong>...and I could use with other datasets.</p>
+				<p id="T3787"><strong>1:03:07</strong>So, as Drew showed, one of the things we can do, [unintelligible] parameter,  is, use the Get Parameter...</p>
+				<p id="T3799"><strong>1:03:19</strong>...as Text method based with an index value.</p>
+				<p id="T3805"><strong>1:03:25</strong>So I&#039;m going to define three parameters, one for my input feature class; I&#039;m going to assign another one to a...</p>
+				<p id="T3816"><strong>1:03:36</strong>...snap feature class, and I&#039;ll update the value...my index; and then an out feature class.</p>
+				<p id="T3832"><strong>1:03:52</strong>I&#039;m going to remove this workspace environment because really, you know, I&#039;m going to be passing in full...</p>
+				<p id="T3838"><strong>1:03:58</strong>...full feature classes with paths. I&#039;m not necessarily going to want them to be in the same location anyways.</p>
+				<p id="T3844"><strong>1:04:04</strong>I&#039;m going to strip that out and then I&#039;m going to take these variables that I&#039;ve created and substitute them...</p>
+				<p id="T3851"><strong>1:04:11</strong>...instead of these hard-coded strings.</p>
+				<p id="T3855"><strong>1:04:15</strong>So I&#039;m going to copy my input to my output, I&#039;m going to densify that output, and I&#039;m going to snap that output...</p>
+				<p id="T3867"><strong>1:04:27</strong>...and then the last one was, the feature class I actually was snapping to, County.</p>
+				<p id="T3876"><strong>1:04:36</strong>Now, Drew kind of got into the Describe a little bit, too.</p>
+				<p id="T3882"><strong>1:04:42</strong>And describe allows you to make decisions based on what your data is.</p>
+				<p id="T3887"><strong>1:04:47</strong>So, as the script is right now, it&#039;s still pretty vulnerable to somebody putting in something that I didn&#039;t intend to...</p>
+				<p id="T3895"><strong>1:04:55</strong>...so really this workflow will only makes sense if I&#039;m trying to snap maybe lines or polygons to another line or polygon.</p>
+				<p id="T3903"><strong>1:05:03</strong>You know, if I put in an annotation feature class that are points, maybe that&#039;s just something I want to stop right up front.</p>
+				<p id="T3910"><strong>1:05:10</strong>So you can use code like this.</p>
+				<p id="T3916"><strong>1:05:16</strong>And all I&#039;m really doing here is I&#039;m creating a...Describe object of my input feature class, whatever that might be...</p>
+				<p id="T3924"><strong>1:05:24</strong>...and then I&#039;m going to evaluate the feature type.</p>
+				<p id="T3928"><strong>1:05:28</strong>And the logic here says basically if it isn&#039;t a polygon or a polyline feature class, then that isn&#039;t what I want...</p>
+				<p id="T3935"><strong>1:05:35</strong>...and then I&#039;m going to come here and I&#039;m going to throw an error.</p>
+				<p id="T3941"><strong>1:05:41</strong>But that&#039;s really not the direction I want to go; I want to try something just slightly different.</p>
+				<p id="T3950"><strong>1:05:50</strong>So one of the nice things about creating Python scripts that are adaptable and take input arguments is that...</p>
+				<p id="T3956"><strong>1:05:56</strong>...you can then take those... That&#039;s why I wasn&#039;t at the UC last year, if anyone was looking for me.</p>
+				<p id="T3966"><strong>1:06:06</strong>You can create Python script tools.</p>
+				<p id="T3979"><strong>1:06:19</strong>Any time you have a toolbox, and actually back up one step, maybe you&#039;re in a workspace...</p>
+				<p id="T3985"><strong>1:06:25</strong>...you can click on here and get a new toolbox.</p>
+				<p id="T3989"><strong>1:06:29</strong>From Toolbox you can click in there, you can add a script.</p>
+				<p id="T3996"><strong>1:06:36</strong>So I&#039;m going to create a tool with that script that I&#039;ve been using in mine and I&#039;m going to call it Snap the Polygons...</p>
+				<p id="T4007"><strong>1:06:47</strong>...something generic, and the name is what you would use, say, if you were calling to it in Python.</p>
+				<p id="T4013"><strong>1:06:53</strong>The label...I&#039;ll call it the same thing, that&#039;s what you would use if say, on the Property Tool dialog, or if you added...</p>
+				<p id="T4021"><strong>1:07:01</strong>...this tool the ModelBuilder, that would be on top.</p>
+				<p id="T4026"><strong>1:07:06</strong>I&#039;m going to locate that file...</p>
+				<p id="T4033"><strong>1:07:13</strong>...and hit Next. And then on this screen, this is where I define my parameters.</p>
+				<p id="T4037"><strong>1:07:17</strong>So I have three parameters. I&#039;m going to define the first one, call it Input Features.</p>
+				<p id="T4044"><strong>1:07:24</strong>And I&#039;m going to use Feature Layer; so why layer and not feature class?</p>
+				<p id="T4049"><strong>1:07:29</strong>Well, if I specify it as feature class, that means I can only use full paths...</p>
+				<p id="T4056"><strong>1:07:36</strong>...in feature classes to the data.</p>
+				<p id="T4057"><strong>1:07:37</strong>Say I had added that feature class to the map, previously I couldn&#039;t just drag and drop that layer in.</p>
+				<p id="T4062"><strong>1:07:42</strong>So, feature layer allows me to use feature classes and layers.</p>
+				<p id="T4070"><strong>1:07:50</strong>Instead of Snap Features, I&#039;m going to also give that a feature layer.</p>
+				<p id="T4077"><strong>1:07:57</strong>And I&#039;m going to define an output feature class.</p>
+				<p id="T4083"><strong>1:08:03</strong>And that will be a feature class.</p>
+				<p id="T4087"><strong>1:08:07</strong>There&#039;s a number of properties down here below; for this scenario, I don&#039;t have to change too many.</p>
+				<p id="T4092"><strong>1:08:12</strong>My last one, this is definitely not an input, this is an output, so I will identify that.</p>
+				<p id="T4098"><strong>1:08:18</strong>And then when I went through that exercise in the script of using Describe, what I was trying to do was basically...</p>
+				<p id="T4104"><strong>1:08:24</strong>...filter out feature types that weren&#039;t acceptable.</p>
+				<p id="T4108"><strong>1:08:28</strong>Well, you can also do that when you create a script tool in the wizard.</p>
+				<p id="T4113"><strong>1:08:33</strong>So for my input features, I click down here. The filter&#039;s currently none.</p>
+				<p id="T4118"><strong>1:08:38</strong>I can use a feature class filter, and I can check off types that are not acceptable to me.</p>
+				<p id="T4125"><strong>1:08:45</strong>Hit Apply, Finish.</p>
+				<p id="T4130"><strong>1:08:50</strong>Now I have this fully functional tool; this will behave in the same manner that any geoprocessing tool behaves.</p>
+				<p id="T4138"><strong>1:08:58</strong>So, you know, before I was working with this river called Crow River, well, Hennepin County is also bounded by...</p>
+				<p id="T4146"><strong>1:09:06</strong>...the upper reaches of the Mississippi.</p>
+				<p id="T4148"><strong>1:09:08</strong>So in this case, I&#039;m going to snap the Mississippi layer, I&#039;m going to snap it to the county, sort of like before.</p>
+				<p id="T4162"><strong>1:09:22</strong>You can see how it&#039;s off a little bit right here.</p>
+				<p id="T4165"><strong>1:09:25</strong>I run that tool, based on the code that I&#039;ve written, hopefully this will come back in 5, 10 seconds.</p>
+				<p id="T4180"><strong>1:09:40</strong>And that is my output. It achieved I wanted to do but with different data.</p>
+				<p id="T4193"><strong>1:09:53</strong>Great. Thanks, Dave.</p>
+				<p id="T4196"><strong>1:09:56</strong>All right, we just have a couple more slides.</p>
+				<p id="T4198"><strong>1:09:58</strong>Here&#039;s a resources slide that we wanted to just call some special attention to.</p>
+				<p id="T4205"><strong>1:10:05</strong>The ArcGIS Resource Center is a central location for finding all of our online documentation, help forums...</p>
+				<p id="T4213"><strong>1:10:13</strong>...and that, these were just, they&#039;re brand-new sites that were just put live a few weeks ago, and so that&#039;s a good place to check...</p>
+				<p id="T4220"><strong>1:10:20</strong>...if you have any questions about ArcGIS.</p>
+				<p id="T4224"><strong>1:10:24</strong>We have a specific geoprocessing resource center, then that contains a script gallery, some blogs...</p>
+				<p id="T4230"><strong>1:10:30</strong>...as well as presentations related specifically to Python.</p>
+				<p id="T4236"><strong>1:10:36</strong>So that&#039;s a good place to check.</p>
+				<p id="T4238"><strong>1:10:38</strong>There are a few Python reference books that we recommend above some other ones, so if you&#039;re interested in learning more...</p>
+				<p id="T4247"><strong>1:10:47</strong>...just about Python as a language, these are a couple good books to check out.</p>
+				<p id="T4251"><strong>1:10:51</strong>There&#039;s a lot of information as well on the Python organization Web site, so you can go there and dive into python.org...</p>
+				<p id="T4261"><strong>1:11:01</strong>...there is a free tutorial, a very, very long tutorial, actually, that you can download and work through.</p>
+				<p id="T4272"><strong>1:11:12</strong>Okay, thank you for attending today; if you&#039;re interested in filling out an evaluation form and haven&#039;t gotten one...</p>
+				<p id="T4279"><strong>1:11:19</strong>...there&#039;s a student assistant over by the door so you can stop and see her.</p>
+				<p id="T4286"><strong>1:11:26</strong>Yep.</p>
+				<p id="T4287"><strong>1:11:27</strong>Oh, thank you.</p>
+				<div id="TranscriptionCopyright">Copyright 2011 Esri</div>
+	</div>
+	</div>
+<div id="TranscriptionBelow">
+	<div id="transcriptBelowLeft"><a href="/transcript/74/en-us/pdf/python-essentials-in-arcgis-i-an-introduction"><sup class="Icon PDF"></sup><span class="ToolTip" title="<sup class='Icon PDF2 IconTip'></sup>Download the transcript as a PDF document."></span></a><a href="/transcript/74/en-us/word/python-essentials-in-arcgis-i-an-introduction"><sup class="Icon Word"></sup><span class="ToolTip" title="<sup class='Icon Word2 IconTip'></sup>Download the transcript as a Word document."></span></a></div>
+	<div id="transcriptBelowRight"><span id="AutoScroll"><span>Auto Scroll (on)</span><span class="ToolTip" title="Enable or disable the automatic scrolling of the transcript text when the video is playing. <span>You can save this option if you login</span>"></span></span></div>
+</div>
+<div class="Clear"><!-- clear --></div>
+		</div>
+		<div class="Clear"><!-- clear float --></div>
+	</section>
+	<div class="Clear"><!-- clear float --></div>
+	<div id="wideContent">
+		<section>
+			<div id="VideoInfo">
+								<h1>Python Essentials in ArcGIS I - An Introduction</h1>
+				<div id="VideoInfoDesc">Knowledge of Python is vital for ArcGIS professionals interested in furthering their automation and analysis skills. Python allows users to create custom data management or analysis tools ranging from single functions to complex multifunction processes with  validation, which can be easily reused, shared, and even executed with little to no user interaction. This workshop will introduce the Python scripting language and show how it can be used to access and automate geoprocessing tools and functionality.</div>
+				<ul>
+					<li id="Bulb"><span>Night Mode (off)</span><sup class="Icon BulbOff" id="NightMode"></sup><span class="ToolTip" title="<sup class='Icon BulbOn IconTip'></sup>Automatically dim the web site while the video is playing.<br /><span>A few seconds after you start watching the video and stop moving your mouse, your screen will dim. You can auto save this option if you login.</span>"></span></li>					<li>Runtime:&nbsp;1:11:30</li>
+					<li>Views:&nbsp;15035</li>
+					<li>Recorded:&nbsp;Jul 1st, 2010</li>
+					<li>Published:&nbsp;Aug 25th, 2010</li>
+				</ul>
+				<div class="Clear"><!-- clear float --></div>
+			</div>
+		</section>
+		<section>
+			<div id="ContentOptions">
+				<div id="ContentOptionsShare">
+					<div id="ContentOptionsShareCon">
+						<ul id="Rate">
+	<li>
+		<div class="videoBlock" id="b25cf1bccfbde1fb59a5cc6664f25277">
+						<sup class="Icon Add1" onClick="executePlaylist(74,this,true); playlistToolTip();"></sup> <span class="ToolTip" title="<sup class='Icon Add2 IconTip'></sup>Add to Queue"></span>
+					</div>
+	</li>
+	<li><a id="Add2Fav" data-id-media="74"><sup class="Icon Heart1"></sup><span class="ToolTip" title="<sup class='Icon Heart2 IconTip'></sup>Save this video to your Favorites list. <span>Login to use this feature</span>"></span></a></li>
+	<li><a id="Chat"><sup class="Icon Chat1" onClick="ScrollToComments();$('#commentText').focus();" ></sup><span class="ToolTip" title="<sup class='Icon Chat2 IconTip'></sup>Post a comment about this video. <span>Login to use this feature</span>"></span></a></li>
+	<li><a id="LikeIt" data-id-media="74"><sup class="Icon Like1"></sup><span class="ToolTip" title="<sup class='Icon Like2 IconTip'></sup>Click on the Thumbs Up icon to show you like this video. <span>Login to use this feature</span>"></span></a></li>
+	<li id="Tips">
+		2 people		like
+				this video.
+			</li>
+</ul>
+<div class="Clear"><!-- clear --></div>
+						<ul id="Share">
+							<li><a onClick="return false;" href="http://www.facebook.com/share.php?u=http://bit.ly/d5tuVk"><sup class="Icon FaceBook" id="FaceBook"></sup><span class="ToolTip" title="<sup class='Icon FaceBook2 IconTip'></sup>Share this on Facebook."></span></a></li>
+							<li><a onClick="return false;" href="http://twitter.com/home?status=Python%20Essentials%20in%20ArcGIS%20I%20-%20An%20Introduction%20-%20http://bit.ly/d5tuVk"><sup class="Icon Twitter" id="Twitter"></sup><span class="ToolTip" title="<sup class='Icon Twitter2 IconTip'></sup>Tweet this video."></span></a></li>
+							<li><a href="mailto:?body=http://bit.ly/d5tuVk&amp;subject=Esri%20Video:%20Python%20Essentials%20in%20ArcGIS%20I%20-%20An%20Introduction"><sup class="Icon eMail" id="eMail"></sup><span class="ToolTip" title="<sup class='Icon eMail2 IconTip'></sup>E-mail this video to a friend."></span></a></li>
+						</ul>
+						<div class="Clear"><!-- clear float --></div>
+					</div>
+				</div>
+				<div id="ContentOptionsEmbed">
+		<div id="downloadStatus"><span id="nodownloadOption">Download unavailable for this video</span></div>
+			<div id="embedStatus"><span id="embedButton">&lt;Embed&gt;<span class="ToolTip" title="Customize the colors and use the HTML code to include this video on your own website."></span></span></div>
+		<div class="Clear"><!-- clear --></div>
+</div>
+				<div id="ContentOptionsTags">
+					<div id="Tags"> <a id="AllTagsLink" href="/tags">Tags:</a>&nbsp;
+		<a href="/tag/182/2010-esri-international-user-conference">2010&nbsp;Esri&nbsp;International&nbsp;User&nbsp;Conference</a>
+		<a href="/tag/286/2010-uc-technical-sessions">2010&nbsp;UC&nbsp;Technical&nbsp;Sessions</a>
+		<a href="/tag/192/david-wynne">David&nbsp;Wynne</a>
+		<a href="/tag/191/drew-flater">Drew&nbsp;Flater</a>
+		<a href="/tag/12/python">Python</a>
+		<a href="/tag/106/python-scripting">Python&nbsp;Scripting</a>
+	</div>
+				</div>
+				<div class="boxSize" id="embedHidden">
+	<div id="closeEmbedButton"><!-- bg --></div>
+	<div id="videoSizes">
+		<div class="boxSize selected" id="smallBox">
+			<div class="Title">480x270</div>
+			<div class="Box">
+				<div class="Checked"><!-- bg --></div>
+			</div>
+		</div>
+		<div class="boxSize" id="mediumBox">
+			<div class="Title">720x405</div>
+			<div class="Box">
+				<div class="Checked"><!-- bg --></div>
+			</div>
+		</div>
+		<div class="boxSize" id="largeBox">
+			<div class="Title">960x540</div>
+			<div class="Box">
+				<div class="Checked"><!-- bg --></div>
+			</div>
+		</div>
+		<div class="customSize" id="customBox">
+			<div class="Title">Custom</div>
+			<div class="Box">
+				<div id="widthDiv"><span>Width:</span>
+					<input value="74" id="embedMediaID" type="hidden" />
+					<input type="text" id="embedWidth" value="480" size="5" maxlength="3"  />
+				</div>
+				<div id="heightDiv"><span>Height:</span>
+					<input id="embedHeight" type="text" value="270" size="5" readonly="readonly" maxlength="3" disabled="disabled"  />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="playerColor">
+		<div id="colorPickerPlayer">
+			<div class="cpCon">
+				<div id="playerLabel">Choose player color:</div>
+				<div id="colorPicker" title="Choose player color">
+					<input type="text" class="miniColors colors" name="miniColors" size="7" value="#000000" />
+				</div>
+			</div>
+			<div id="playerBG" title="Choose player color">
+				<div id="playerBGCon">
+					<div id="embedVideoScreen" style="background-image:url(/thumbs/2010/08/74/TW_706_s.jpg);"><!-- bg --></div>
+					<div id="embedVideoPlayer"><!-- bg --></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="embedScript">
+		<textarea cols="30" rows="3 readonly="readonly" id="embedCode">&lt;script src=&quot;http://video.esri.com/embed/74/000000/width/480&quot;&gt;&lt;/script&gt;</textarea>
+	</div>
+</div>
+								<div class="Clear"><!-- clear --></div>
+			</div>
+			<div class="Clear"><!-- clear float --></div>
+					</section>
+		<div class="Clear"><!-- clear float --></div>
+	</div>
+	<div class="Clear"><!-- clear float --></div>
+</div>
+	</article>
+	<div class="Clear"><!-- clear float --></div>
+	<div class="WhitePad">
+				<div id="Series" class="PaneBlue RightBlue">
+	<h2>Part of the Series: <span><a href="/series/7/2010-user-conference-tech-sessions">2010 User Conference Tech Sessions</a></span></h2>
+	<div id="SeriesFour">
+		<div id="scroller" >
+			<a id="browseLeft" data-series-url="74/7/32/left" class="prev browse left" title="Back"><!-- "previous page" action --></a>
+			<a id="browseRight" data-series-url="74/7/32/right" class="next browse right" title="Next"><!-- "next page" action --></a>
+			<!-- root element for scrollable -->
+	<div class="scrollable"> 
+		<!-- root element for the items -->
+		<div class="seriesBubble ">
+	<div class="videoBlock" id="3ca0aba39ff7e79a852c780409ecdae9"> <span class="iconCont"><a href="/watch/66/arcgis-for-developersan-introduction"><img width="160" height="90" src="/thumbs/2010/08/66/TW_1077_s.jpg" alt="ArcGIS for Developers—An Introduction" title="ArcGIS for Developers—An Introduction" /></a> <span class="Order">33</span> <span class="time">1:17:06</span>
+				<sup onClick="executePlaylist(66,this,true)" class="Icon Add1" title="Add to Queue"></sup>
+				</span> <span class="Clear"><!-- clear --></span>
+		<div class="contain"><strong><a href="/watch/66/arcgis-for-developersan-introduction">ArcGIS for Developers—An Introduction</a></strong>
+					</div>
+	</div>
+</div>
+<div class="seriesBubble highlighted">
+	<div class="videoBlock" id="019f490ade0769b9bb0c20f4ae34d0ab"> <span class="iconCont"><a href="/watch/74/python-essentials-in-arcgis-i-an-introduction"><img width="160" height="90" src="/thumbs/2010/08/74/TW_706_s.jpg" alt="Python Essentials in ArcGIS I - An Introduction" title="Python Essentials in ArcGIS I - An Introduction" /></a> <span class="Order">34</span> <span class="time">1:11:30</span>
+				<sup onClick="executePlaylist(74,this,true)" class="Icon Add1" title="Add to Queue"></sup>
+				</span> <span class="Clear"><!-- clear --></span>
+		<div class="contain"><strong><a href="/watch/74/python-essentials-in-arcgis-i-an-introduction">Python Essentials in ArcGIS I - An Introduction</a></strong>
+					</div>
+	</div>
+</div>
+<div class="seriesBubble ">
+	<div class="videoBlock" id="a23420179dbce136c6e54da736019d5f"> <span class="iconCont"><a href="/watch/72/esris-enterprise-strategy"><img width="160" height="90" src="/thumbs/2010/08/72/TW_1149_s.jpg" alt="Esri’s Enterprise Strategy" title="Esri’s Enterprise Strategy" /></a> <span class="Order">35</span> <span class="time">1:12:20</span>
+				<sup onClick="executePlaylist(72,this,true)" class="Icon Add1" title="Add to Queue"></sup>
+				</span> <span class="Clear"><!-- clear --></span>
+		<div class="contain"><strong><a href="/watch/72/esris-enterprise-strategy">Esri’s Enterprise Strategy</a></strong>
+					</div>
+	</div>
+</div>
+<div class="seriesBubble ">
+	<div class="videoBlock" id="13487e9b2e132bb783200d843cc5d5f7"> <span class="iconCont"><a href="/watch/87/installing-and-administering-arcgis-software"><img width="160" height="90" src="/thumbs/2010/08/87/TW_477_s.jpg" alt="Installing and Administering ArcGIS Software" title="Installing and Administering ArcGIS Software" /></a> <span class="Order">36</span> <span class="time">1:01:11</span>
+				<sup onClick="executePlaylist(87,this,true)" class="Icon Add1" title="Add to Queue"></sup>
+				</span> <span class="Clear"><!-- clear --></span>
+		<div class="contain"><strong><a href="/watch/87/installing-and-administering-arcgis-software">Installing and Administering ArcGIS Software</a></strong>
+					</div>
+	</div>
+</div>
+		<div class="Clear"><!-- clear --></div>
+	</div>
+</div>
+	</div>
+	<div class="Clear"><!-- clear --></div>
+</div>
+		<div class="Clear"><!-- clear float --></div>
+				<article id="CommentsPanel">
+			<section id="commentContainer">
+				<div id="Comments" class="PaneBlue RightBlue">
+					<h2 id="PaginationTop">Comments&nbsp;
+	</h2>
+<div class="Pad">
+		<span class="More">Be the first to post a comment</span>
+			<div class="commentLogin">To post a comment, you'll need to <a href="/login" class="BlueLink">login</a>.<br />
+		If you don't have an Esri Global Login ID, please <a href="/register" class="BlueLink">register here</a>.</div>
+			<div id="postlist">		<div class="Clear"><!-- clear --></div>
+	</div>
+</div>
+				</div>
+			</section>
+		</article>
+		<aside id="RelatedPanel">
+			<div class="PaneBlue RightBlue HomeVideos">
+	<h2>Related Videos</h2>
+	<div class="Pad">
+		<ul class="smallVideoList">
+<li class="BorderTop">
+	<figure><div class="videoBlock" id="caf7d804f27aa1a914731e93e7d49a51">
+		<span class="iconCont"><a href="/watch/134/better-map-production"><img width="160" height="90" src="/thumbs/2010/11/134/5_AG10-BetterMap-Prod_s.jpg" alt="Better Map Production" title="Better Map Production" /></a>
+        <span class="time">11:39</span>
+		                        	<sup onClick="executePlaylist(134,this,true)" class="Icon Add1" title="Add to Queue"></sup>
+                                                  
+		        </span>
+		<div class="contain"><strong><a href="/watch/134/better-map-production">Better Map Production</a></strong>
+		<div class="Desc">ArcGIS 10 enables you to create better maps. Learn how Python scripting can be used to automate, customize,&#8230;</div></div>
+	</div></figure>
+</li><li class="">
+	<figure><div class="videoBlock" id="f700d54ba51580694cf132d6f134f33b">
+		<span class="iconCont"><a href="/watch/47/gis-in-education-bigfork-high-school-cave-club-bigfork-montana"><img width="160" height="90" src="/thumbs/2010/07/47/18_Bigfork_High_School_s.jpg" alt="GIS in Education - Bigfork High School Cave Club, Bigfork, Montana" title="GIS in Education - Bigfork High School Cave Club, Bigfork, Montana" /></a>
+        <span class="time">19:23</span>
+		                        	<sup onClick="executePlaylist(47,this,true)" class="Icon Add1" title="Add to Queue"></sup>
+                                                  
+		        </span>
+		<div class="contain"><strong><a href="/watch/47/gis-in-education-bigfork-high-school-cave-club-bigfork-montana">GIS in Education - Bigfork High School Cave Club, Bigfork, Montana</a></strong>
+		<div class="Desc">Gil Grosvenor, Board Chairman, National Geographic Society, talks about the National Geographic GeoMentor&#8230;</div></div>
+	</div></figure>
+</li><li class="">
+	<figure><div class="videoBlock" id="414e1574766f58a58f10663b7fc3f00b">
+		<span class="iconCont"><a href="/watch/73/creating-web-applications-with-arcgis"><img width="160" height="90" src="/thumbs/2010/08/73/TW_1191_s.jpg" alt="Creating Web Applications with ArcGIS" title="Creating Web Applications with ArcGIS" /></a>
+        <span class="time">1:08:57</span>
+		                        	<sup onClick="executePlaylist(73,this,true)" class="Icon Add1" title="Add to Queue"></sup>
+                                                  
+		        </span>
+		<div class="contain"><strong><a href="/watch/73/creating-web-applications-with-arcgis">Creating Web Applications with ArcGIS</a></strong>
+		<div class="Desc">ArcGIS offers several options for building Web applications. You can start by using one of the ready-to-use&#8230;</div></div>
+	</div></figure>
+</li><li class="">
+	<figure><div class="videoBlock" id="c3c16b199f5985f20d20eb692c3f2b6a">
+		<span class="iconCont"><a href="/watch/91/modelbuilder-advanced-technologies"><img width="160" height="90" src="/thumbs/2010/08/91/TW_577_s.jpg" alt="ModelBuilder-Advanced Technologies" title="ModelBuilder-Advanced Technologies" /></a>
+        <span class="time">1:08:17</span>
+		                        	<sup onClick="executePlaylist(91,this,true)" class="Icon Add1" title="Add to Queue"></sup>
+                                                  
+		        </span>
+		<div class="contain"><strong><a href="/watch/91/modelbuilder-advanced-technologies">ModelBuilder-Advanced Technologies</a></strong>
+		<div class="Desc">This session will take an in-depth look at ModelBuilder and its more advanced features such as setting&#8230;</div></div>
+	</div></figure>
+</li><li class="">
+	<figure><div class="videoBlock" id="56acf89169f98a9b9eb0ddc01cc988c6">
+		<span class="iconCont"><a href="/watch/48/national-geographic-society-bell-medals"><img width="160" height="90" src="/thumbs/2010/07/48/19_Bell_Awards_s.jpg" alt="National Geographic Society Bell Medals" title="National Geographic Society Bell Medals" /></a>
+        <span class="time">14:05</span>
+		                        	<sup onClick="executePlaylist(48,this,true)" class="Icon Add1" title="Add to Queue"></sup>
+                                                  
+		        </span>
+		<div class="contain"><strong><a href="/watch/48/national-geographic-society-bell-medals">National Geographic Society Bell Medals</a></strong>
+		<div class="Desc">National Geographic Society Board Chairman Gil Grosvenor recognizes Dr. Roger Tomlinson for his inventiveness&#8230;</div></div>
+	</div></figure>
+</li>        </ul>
+	</div>
+</div>
+			<div class="Clear"><!-- clear --></div>
+		</aside>
+		<div class="Clear"><!-- clear --></div>
+	</div>
+</div>
+				<div class="Clear"><!-- clear --></div>
+			</div>
+		</div>
+	</div>
+		<footer>
+	<div class="Clear"><!-- clear --></div>
+	<div id="Footer">
+		<div class="FooterBG">
+			<div class="Footer960">
+				<div class="Copyright"><small><a href="/trademarks">&#169;&nbsp;2011 Esri</a></small></div>
+				<div class="FooterRight"><small><a href="/contact">Contact Us</a>&nbsp;<a href="/privacy-policy">Privacy Policy</a>&nbsp;<a href="/sitemap">Sitemap</a>&nbsp;<a href="/rss">Podcast&nbsp;&amp;&nbsp;RSS&nbsp;Feeds</a></small></div>
+				<div class="Clear"><!-- clear --></div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--CrazyEgg--> 
+<script type="text/javascript" src="http://s3.amazonaws.com/new.cetrk.com/pages/scripts/0006/8609.js"> </script> 
+<!--End CrazyEgg-->
+	</div>
+</body>
+</html>
